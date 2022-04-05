@@ -1,0 +1,119 @@
+.top-menu {
+    height: 50px;
+    background-color: #F5F7FA;
+    display: flex;
+    align-items: center;
+}
+
+/* -------------------------------------------------------------------------------------- */
+
+.top-menu .right a{
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+.top-menu .right span{
+    color: var(--text-color);
+    font-size: 16px;
+    transition: all 1s;
+}
+
+.top-menu .right .icon {
+    margin-right: 5px;
+}
+
+.top-menu .right span:hover {
+    color: var(--text-color-hover);
+}
+
+/* -------------------------------------------------------------------------------------- */
+
+.top-menu .left {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.top-menu .left .menu ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.top-menu .left .menu ul li a {
+    color: var(--text-color);
+    font-size: 16px;
+    transition: all 1s;
+}
+
+.top-menu .left .menu ul li a:hover{
+    color: var(--text-color-hover);
+}
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+.top-menu .left .change-lang {
+    position: relative;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.top-menu .left .change-lang span {
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+.top-menu .left .change-lang .active-lang {
+    min-height: 40px;
+    min-width: 120px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow:  0 0 5px #e0e1e2;
+    transition: box-shadow .5s;
+}
+
+.top-menu .left .change-lang .other {
+    visibility: hidden;
+    opacity:0;
+    position: absolute;
+    margin-top: 6px;
+    background-color: #fff;
+    min-width: 120px;
+    border-radius: 10px;
+    transition: visibility .3s , opacity .3s;
+}
+
+.top-menu .left .change-lang .other div {
+    border-radius: 10px;
+    margin: 5px;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition:  background-color 1s;
+}
+
+.top-menu .left .change-lang .show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.top-menu .left .change-lang .other div:hover {
+    background-color: #E9EDF5;
+}
+
+.top-menu .left .change-lang .persian:hover {
+    box-shadow: 1px 1px 1px 1px 1px #999;
+}
+
+.top-menu .left .change-lang .active-lang:hover {
+    box-shadow: 0 0 30px #bfcede;
+}
+
+@media (max-width: 1200px) {
+    .top-menu {
+        display: none;
+    }
+}
