@@ -7,22 +7,21 @@
 
 /* -------------------------------------------------------------------------------------- */
 
-.top-menu .right a{
-    display: flex;
-    align-items: center;
+.top-menu .right {
     height: 50px;
 }
-.top-menu .right span{
+
+.top-menu .right a{
+    display: inline-block;
+    margin-top: 13px;
+}
+.top-menu .right .text {
     color: var(--text-color);
     font-size: 16px;
     transition: all 1s;
 }
 
-.top-menu .right .icon {
-    margin-right: 5px;
-}
-
-.top-menu .right span:hover {
+.top-menu .right:hover .text {
     color: var(--text-color-hover);
 }
 
@@ -32,6 +31,7 @@
     display: flex;
     justify-content: left;
     align-items: center;
+    height: 50px;
 }
 
 .top-menu .left .menu ul li {
@@ -54,7 +54,6 @@
 .top-menu .left .change-lang {
     position: relative;
     cursor: pointer;
-    margin-top: 5px;
 }
 
 .top-menu .left .change-lang span {
@@ -63,14 +62,13 @@
 }
 
 .top-menu .left .change-lang .active-lang {
-    min-height: 40px;
+    min-height: 38px;
     min-width: 120px;
     background-color: #fff;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    box-shadow:  0 0 5px #e0e1e2;
     transition: box-shadow .5s;
 }
 
@@ -82,6 +80,7 @@
     background-color: #fff;
     min-width: 120px;
     border-radius: 10px;
+    box-shadow: 0 0 3px 0px #bfcede;
     transition: visibility .3s , opacity .3s;
 }
 
@@ -111,6 +110,8 @@
 .top-menu .left .change-lang .active-lang:hover {
     box-shadow: 0 0 30px #bfcede;
 }
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 
 @media (max-width: 1200px) {
     .top-menu {

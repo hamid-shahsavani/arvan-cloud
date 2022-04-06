@@ -1,0 +1,228 @@
+
+/* ------------------------------------------------------ global -------------------------------------------------------- */
+
+.main-menu {
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+    z-index: 999;
+    box-shadow: 0 30px 50px -3px rgb(0 0 0 / 10%);
+}
+
+.main-menu .c-container {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-menu .c-container .right , .main-menu .c-container .left {
+    display: flex;
+    font-size: 17px;
+}
+
+/* ------------------------------------------------------ right -------------------------------------------------------- */
+
+/* -=-=-=-=-=-=-=-=-=-=-=- logo -=-=-=-=-=-=-=-=-=-=-=-=-=-  */
+
+.main-menu .c-container .right .logo {
+    margin: 10px 10px 0 10px;
+}
+
+/* -=-=-=-=-=-=-=-=-=-=-=- menu -=-=-=-=-=-=-=-=-=-=-=-=-=-  */
+
+.main-menu .c-container .right ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.main-menu .c-container .right ul li {
+    margin: 0 20px;
+}
+
+.main-menu .c-container .right ul li a {
+    color: var(--text-color);
+    transition: color .5s;
+}
+
+.main-menu .c-container .right ul li a i {
+    color: #c5c7c9 !important;
+    padding: 0 5px;
+    font-size: 16px;
+}
+
+/* -=-=-=-=-=-=-=-=-=-=- hover effect -=-=-=-=-=-=-=-=-=-=-=-=-=-=-  */
+
+.main-menu .c-container .right ul li a:hover {
+    color: var(--base-color);
+}
+
+/* ------------------------------------------------------ left -------------------------------------------------------- */
+
+/* -=-=-=-=-=-=-=-=-=-=- register button -=-=-=-=-=-=-=-=-=-=-=-=-=-=-  */
+
+.main-menu .c-container .left .register {
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--base-color);
+    color: #fff;
+    height: 40px;
+    width: 140px;
+    border-radius: 10px;
+    transition: box-shadow .5s;
+}
+
+/* -=-=-=-=-=-=-=-=-=-=- login button -=-=-=-=-=-=-=-=-=-=-=-=-=-=-  */
+
+.main-menu .c-container .left .login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--base-color);
+    color: var(--base-color);
+    height: 40px;
+    width: 140px;
+    border-radius: 10px;
+    transition: box-shadow .5s;
+}
+
+/* -=-=-=-=-=-=-=-=-=-=- hover effect -=-=-=-=-=-=-=-=-=-=-=-=-=-=-  */
+
+.main-menu .c-container .left .login:hover , .main-menu .c-container .left .register:hover {
+    box-shadow: 0 0 0 3px #bfeeee;
+}
+
+/* ------------------------------------------------------ sub-menu -------------------------------------------------------- */
+
+/* -=-=-=-=-=-=-=-=-=-=- global -=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+.sub-menu div .container-fluid {
+    height:600px;
+    box-shadow: 0 30px 50px -3px rgb(0 0 0 / 5%);
+}
+
+/* -=-=-=-=-=-=-=-=-=-=- right -=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+.sub-menu .right {
+    height: 600px;
+    background-color: #F5F7FA;
+    padding: 30px 45px 0 30px;
+}
+
+/* -=-=-=-=-=-=-=-=-=-=- right - header -=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+.sub-menu .right .right-header {
+    border-bottom: 1px solid #b2c2d6;
+    color: #022522;
+    font-size: 12px;
+    font-weight: 400;
+    padding-bottom: 16px;
+}
+
+/* -=-=-=-=-=-=-=-=-=-=- right - main -=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+.sub-menu .right .right-main {
+    margin: 10px 0 10px 10px;
+}
+
+.sub-menu .right .right-main .list {
+    padding: 10px 15px 10px 0;
+    display: flex;
+    border-radius: 10px;
+    transition: background-color .5s;
+}
+
+.sub-menu .right .right-main .list .icon {
+    margin: 12px 0px 0 20px;
+}
+
+.sub-menu .right .right-main .list .title {
+    color: #253343;
+    font-size: 16px;
+    font-weight: 700;
+    transition: color .5s;
+}
+
+.sub-menu .right .right-main .list .description {
+    margin-top: 5px;
+    color: #697d9a;
+    font-size: 12px;
+}
+
+/* -=-=--=-=-=-=-=- right - main - hover effect -=-=-=-=-=-=-=-=-=- */
+
+.sub-menu .right .right-main .list:hover {
+    background-color: #E7ECF4;
+}
+
+.sub-menu .right .right-main .list:hover .title {
+    color: var(--base-color);
+}
+
+/* -=-=-=-=-=-=-=-=-=-=- left -=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+.sub-menu .left {
+    height: 600px;
+    background-color: #EEF2F7;
+    padding: 30px 45px 0 30px;
+}
+
+/* -=-=-=-=-=-=-=-=-=-=- left - header -=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+.sub-menu .left .left-header {
+    border-bottom: 1px solid #b2c2d6;
+    color: #022522;
+    font-size: 12px;
+    font-weight: 400;
+    padding-bottom: 16px;
+}
+
+/* -=-=-=-=-=-=-=-=-=-=- left - main -=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+.sub-menu .left .left-main {
+    display: flex;
+    flex-flow: column wrap;
+    height: 600px;
+}
+
+.sub-menu .left .left-main .left-content {
+    width: 25%;
+    margin: 10px 0 10px 10px;
+    display: flex;
+}
+
+.sub-menu .left .left-main {
+    padding: 10px 15px 10px 0;
+    display: flex;
+}
+
+.sub-menu .left .left-main .icon {
+    margin: 8px 0px 0 20px;
+}
+
+.sub-menu .left .left-main .content .title {
+    color: #253343;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color .5s;
+    margin-bottom: 10px;
+}
+
+.sub-menu .left .left-main .content .links ul li {
+    margin: 5px 0;
+}
+
+.sub-menu .left .left-main .content .links ul li a {
+    color: #697d9a;
+    font-size: 16px;
+    transition: color .5s;
+}
+
+/* -=-=-=-=-=-=-=-=-=-=- left - main - hover -=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+.sub-menu .left .left-main .content .links ul li a:hover {
+    color: var(--base-color);
+}
