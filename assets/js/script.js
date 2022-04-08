@@ -7,15 +7,27 @@ $(document).ready(function(){
     });
 });
 
-//? hide sub-menu 
+//? show and hide sub-menu 
 
-$(document).ready(function(){
-    $('.sub-menu .item-1').hide();
-    $('.sub-menu .item-2').hide();
-    $('.sub-menu .item-4').hide();
-    $('.sub-menu .item-5').hide();
-    $('.main-menu .item-1').click(function() {
-        $('.sub-menu .item-1').slideToggle("slow");
-    });
+$(document).ready(function () { 
+    $('.nav-content').hide();
+    $('.nav-tab').on("click", function () {
+        let clickedId = $(this).attr("id");
+        let clickedIdContent = clickedId.replace('-tab','');
+        if ($("#"+clickedId).hasClass('active')){
+            $("#"+clickedIdContent).slideUp("slow");
+
+            $("#"+clickedId).removeClass('active');
+            return 0;
+        }
+        $('.nav-tab').each(function (index) {
+            if ($(this).attr("id") == clickedId) {
+                $('.nav-tab,.nav-content').eq(index).addClass('active');
+                $(".nav-content").eq(index).slideDown();
+            } else {
+                $('.nav-tab,.nav-content').eq(index).removeClass('active');
+                $(".nav-content").eq(index).hide();
+            }
+        });
+    });  
 });
-

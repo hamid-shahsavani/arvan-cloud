@@ -97,6 +97,7 @@
 .top-menu .left .change-lang .show {
     visibility: visible;
     opacity: 1;
+    z-index: 999999999;
 }
 
 .top-menu .left .change-lang .other div:hover {
