@@ -1,0 +1,73 @@
+
+/*? global for sub-menus */
+
+.m-main-menu .m-main-menu-item .m-sub-menu {
+    background: #eef2f7;
+    border: 1px solid #cdd7e4;
+    padding: 20px 40px 0 40px;
+}
+
+
+.m-main-menu .m-main-menu-item i {
+    transition: transform 1s;
+    height: 20px;
+}
+
+.m-main-menu .m-main-menu-item.active i {
+    transform: rotate(180deg);
+}
+
+/** ------------------------------------------------- item-1 ------------------------------------------------- */
+
+.m-main-menu .item-1 .m-sub-menu .title {
+    border-bottom: 1px solid #b2c2d6;
+    color: #032421;
+    font-size: 12px;
+    font-weight: 500;
+    padding-bottom: 20px;
+} 
+
+.m-main-menu .item-1 .m-sub-menu .item {
+    display: flex !important;
+    margin: 20px 0 20px 0;
+}
+
+.m-main-menu .item-1 .m-sub-menu .item .icon {
+    margin: 10px 0 0 10px !important;
+}
+
+.m-main-menu .item-1 .m-sub-menu .text .top {
+    color: #253343;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.m-main-menu .item-1 .m-sub-menu .text .bottom {
+    color: #697d9a;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.m-main-menu .item-1 .m-sub-menu .item ul li ::before {
+        content: "• ";
+        color: #697d9a; 
+        font-size: 18px;
+        margin: -2px 0 0 5px;
+}
+
+.m-main-menu .item-1 .m-sub-menu .item ul li a {
+    color: #697d9a !important;
+    font-size: 13px;
+    background-color: #EEF2F7;
+    margin: 5px 0 !important;
+    padding: 0;
+}
+
+.m-main-menu .item-1 .m-sub-menu .list {
+    margin: 10px 0;
+}
+
+.m-main-menu .item-1 .m-sub-menu .list:nth-of-type(1){
+    padding: 60px !important;
+}

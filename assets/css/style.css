@@ -1,28 +1,36 @@
-/* --------------------------------- module --------------------------------- */
+/** --------------------------------- module --------------------------------- */
 
-@import url(_top-menu.css);
-@import url(_main-menu.css);
-@import url(_sub-menu.css);
+/*? for desktop media quary */
 
-/* -------------------------------- css reset ------------------------------- */
+@import url(_d-header-top-menu.css);
+@import url(_d-header-main-menu.css);
+@import url(_d-header-sub-menu.css);
+
+/*? for mobile media quary */
+
+@import url(_m-header-top-menu.css);
+@import url(_m-header-main-menu.css);
+@import url(_m-header-sub-menu.css);
+
+/** -------------------------------- css reset ------------------------------- */
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Vazirmatn, sans-serif;
-    list-style-type: none;
-    text-decoration: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Vazirmatn, sans-serif;
+  list-style-type: none;
+  text-decoration: none;
 }
 
 body {
-    background-color: #efefef;
+  background-color: #efefef;
 }
 
-/* -------------------------------- variable -------------------------------- */
+/** -------------------------------- variable -------------------------------- */
 
 :root {
-    --base-color: #00BABA;
-    --text-color: #465A71;
-    --text-color-hover: #022522;
+  --base-color: #00baba;
+  --text-color: #465a71;
+  --text-color-hover: #022522;
 }

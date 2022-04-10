@@ -1,0 +1,135 @@
+/* ------------------------------------------------------ global -------------------------------------------------------- */
+
+.main-menu {
+  height: 80px;
+  background-color: rgb(255, 255, 255);
+  z-index: 999;
+  box-shadow: 0 30px 50px -3px rgb(0 0 0 / 10%);
+}
+
+.desktop-header .main-menu .c-container {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-menu .c-container .right,
+.main-menu .c-container .left {
+  display: flex;
+  font-size: 17px;
+}
+
+/* ------------------------------------------------------ right -------------------------------------------------------- */
+
+/* -=-=-=-=-=-=-=-=-=-=-=- logo -=-=-=-=-=-=-=-=-=-=-=-=-=-  */
+
+.main-menu .c-container .right .logo {
+  display: flex;
+  align-items: center;
+}
+
+/* -=-=-=-=-=-=-=-=-=-=-=- menu -=-=-=-=-=-=-=-=-=-=-=-=-=-  */
+
+.main-menu .c-container .right ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.main-menu .c-container .right ul li {
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+  height: 80px;
+  position: relative;
+}
+
+.main-menu .c-container .right ul li a {
+  color: var(--text-color);
+  transition: color 0.5s;
+}
+
+.main-menu .c-container .right ul li a i {
+  color: #c5c7c9 !important;
+  padding: 0 5px;
+  font-size: 16px;
+  transition: transform 0.8s;
+}
+
+/* -=-=-=-=-=-=-=-=-=-=- hover effect -=-=-=-=-=-=-=-=-=-=-=-=-=-=-  */
+
+.main-menu .c-container .right ul li a:hover {
+  color: var(--base-color);
+}
+
+/* ------------------------------------------------------ left -------------------------------------------------------- */
+
+/* -=-=-=-=-=-=-=-=-=-=- register button -=-=-=-=-=-=-=-=-=-=-=-=-=-=-  */
+
+.main-menu .c-container .left .register {
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--base-color);
+  color: #fff;
+  height: 40px;
+  width: 140px;
+  border-radius: 10px;
+  transition: box-shadow 0.5s;
+}
+
+/* -=-=-=-=-=-=-=-=-=-=- login button -=-=-=-=-=-=-=-=-=-=-=-=-=-=-  */
+
+.main-menu .c-container .left .login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--base-color);
+  color: var(--base-color);
+  height: 40px;
+  width: 140px;
+  border-radius: 10px;
+  transition: box-shadow 0.5s;
+}
+
+/* -=-=-=-=-=-=-=-=-=-=- hover effect -=-=-=-=-=-=-=-=-=-=-=-=-=-=-  */
+
+.main-menu .c-container .left .login:hover,
+.main-menu .c-container .left .register:hover {
+  box-shadow: 0 0 0 3px #bfeeee;
+}
+
+/* -=-=-=-=-=-=-=-=-=-=- active effect -=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+/* ===> icon */
+
+.main-menu li.active a i {
+  transform: rotate(180deg);
+}
+
+/* ===> border-bottm */
+
+.main-menu li:after {
+  content: "";
+  display: block;
+  top: 96%;
+  border-bottom: 2px solid var(--base-color);
+  width: 0;
+  position: absolute;
+  right: 0;
+  -webkit-transition: 1s ease;
+  transition: 0.6s ease;
+}
+
+.main-menu li.active:after {
+  width: 100%;
+}
+
+/* ===> text color */
+
+.main-menu li.active a {
+  color: var(--base-color) !important;
+}
