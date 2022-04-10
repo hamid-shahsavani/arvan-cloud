@@ -3,13 +3,27 @@
 function hideAndShow(show, active) {
   $(show).hide();
   $(active).on('click', function () {
+    $(show).slideToggle();
     if ($(active).hasClass('active')) {
       $(active).removeClass('active');
-      $(show).slideUp();
-      return 0;
+    } else {
+      $(active).addClass('active');
     }
-    $(active).addClass('active');
-    $(show).slideDown();
+  });
+}
+
+function showSubMenu(subMenu,menu){
+  $(subMenu).hide();
+  let myVar = 0;
+  $(menu).on('click',function(){
+    $(menu).find("ul").click(function(){
+      $(subMenu).slideDown();
+      myVar = 1;
+    });
+    if(myVar) {
+      return
+    } 
+    $(subMenu).slideToggle();
   });
 }
 
@@ -58,7 +72,11 @@ $(document).ready(function () {
   //? add active class to mobile menu item and show sub-menu
 
   for (let i = 1; i <=4 ; i++) {
-    hideAndShow('.m-main-menu .item-'+i+' > .m-sub-menu' , '.m-main-menu .item-'+i);
+
+    //! bug ---> click to sub-menu and slideUp and hide sub-menu !
+
+    // hideAndShow('.m-main-menu .item-'+i+' > .m-sub-menu' , '.m-main-menu .item-'+i);
+    hideAndShow('.item-'+i+' > .m-sub-menu' , '.item-'+i);
   }
 
 });

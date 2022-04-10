@@ -7,6 +7,13 @@
     padding: 20px 40px 0 40px;
 }
 
+.m-main-menu .m-sub-menu .title {
+    border-bottom: 1px solid #b2c2d6;
+    color: #032421;
+    font-size: 12px;
+    font-weight: 500;
+    padding-bottom: 20px;
+} 
 
 .m-main-menu .m-main-menu-item i {
     transition: transform 1s;
@@ -17,57 +24,82 @@
     transform: rotate(180deg);
 }
 
-/** ------------------------------------------------- item-1 ------------------------------------------------- */
+/** ===> item type-1 */
 
-.m-main-menu .item-1 .m-sub-menu .title {
-    border-bottom: 1px solid #b2c2d6;
-    color: #032421;
-    font-size: 12px;
-    font-weight: 500;
-    padding-bottom: 20px;
-} 
-
-.m-main-menu .item-1 .m-sub-menu .item {
+.m-main-menu .m-sub-menu .item {
     display: flex !important;
     margin: 20px 0 20px 0;
 }
 
-.m-main-menu .item-1 .m-sub-menu .item .icon {
+.m-main-menu .m-sub-menu .item .icon {
     margin: 10px 0 0 10px !important;
 }
 
-.m-main-menu .item-1 .m-sub-menu .text .top {
+.m-main-menu .m-sub-menu .text .top {
     color: #253343;
     font-size: 15px;
     font-weight: 600;
 }
 
-.m-main-menu .item-1 .m-sub-menu .text .bottom {
+.m-main-menu .m-sub-menu .text .bottom {
     color: #697d9a;
     font-size: 13px;
     font-weight: 500;
     margin-top: 5px;
 }
 
-.m-main-menu .item-1 .m-sub-menu .item ul li ::before {
+/** ===> item type-2 */
+
+.m-main-menu .m-sub-menu .item-type-2 ul li ::before {
         content: "• ";
         color: #697d9a; 
         font-size: 18px;
         margin: -2px 0 0 5px;
 }
 
-.m-main-menu .item-1 .m-sub-menu .item ul li a {
+.m-main-menu .m-sub-menu .item-type-2 ul li a {
     color: #697d9a !important;
-    font-size: 13px;
+    font-size: 14px;
     background-color: #EEF2F7;
     margin: 5px 0 !important;
     padding: 0;
 }
 
-.m-main-menu .item-1 .m-sub-menu .list {
+/** ===> item type-3 */
+
+.m-main-menu .m-sub-menu .item-type-3 {
     margin: 10px 0;
 }
+.m-main-menu .m-sub-menu .item-type-3 li a {   
+    background-color: transparent;
+    display:block;
+    margin:0;
+    padding: 8px 0;
+}
 
-.m-main-menu .item-1 .m-sub-menu .list:nth-of-type(1){
-    padding: 60px !important;
+.m-main-menu .m-sub-menu .item-type-3 .item-title {
+    color: #253343;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.m-main-menu .m-sub-menu .item-type-3 .item-description {
+    color: #697d9a;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 4px;
+}
+
+.disable div , .m-main-menu .m-sub-menu .item-type-2 ul .disable {
+    color: #9db0cb !important;
+}
+
+/** ===> item type-4 */
+
+.m-main-menu .m-sub-menu .item-type-4 .text {
+    display: flex;
+    align-items: center;
+    color: #253343;
+    font-size: 15px;
+    font-weight: 600;
 }
