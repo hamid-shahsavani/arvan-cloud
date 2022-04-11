@@ -1,17 +1,3 @@
-/** --------------------------------- module --------------------------------- */
-
-/*? for desktop media quary */
-
-@import url(_d-header-top-menu.css);
-@import url(_d-header-main-menu.css);
-@import url(_d-header-sub-menu.css);
-
-/*? for mobile media quary */
-
-@import url(_m-header-top-menu.css);
-@import url(_m-header-main-menu.css);
-@import url(_m-header-sub-menu.css);
-
 /** -------------------------------- css reset ------------------------------- */
 
 * {
