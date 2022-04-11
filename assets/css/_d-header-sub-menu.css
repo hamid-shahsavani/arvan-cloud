@@ -8,14 +8,14 @@
 }
 
 .sub-menu div .container-fluid {
-  height: 600px;
+  height: 550px;
   box-shadow: 0 30px 50px -3px rgb(0 0 0 / 5%);
 }
 
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- right [for item 1,2,4,5] -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 
 .sub-menu .right {
-  height: 600px;
+  height: 550px;
   background-color: #f5f7fa;
   padding: 30px 45px 0 30px;
 }
@@ -75,7 +75,7 @@
 /* ===> global - left [for item-1] */
 
 .sub-menu .item-1 .left {
-  height: 600px;
+  height: 550px;
   background-color: #eef2f7;
   padding: 30px 45px 0 30px;
 }
@@ -95,7 +95,7 @@
 .sub-menu .item-1 .left .left-main {
   display: flex;
   flex-flow: column wrap;
-  height: 600px;
+  height: 490px;
 }
 
 .sub-menu .item-1 .left .left-main .left-content {
@@ -142,7 +142,7 @@
 /* ===> left - global [for item-2] */
 
 .sub-menu .item-2 .left {
-  height: 600px;
+  height: 550px;
   background-color: #eef2f7;
   padding: 30px 0 0 20px;
   display: flex;
@@ -201,7 +201,7 @@
 /* ===> left - global [for item-4] */
 
 .sub-menu .item-4 .left {
-  height: 600px;
+  height: 550px;
   background-color: #eef2f7;
   padding: 0;
   padding-bottom: 20px;
@@ -379,7 +379,7 @@
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- left [for item-5] -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 
 .sub-menu .item-5 .left {
-  height: 600px;
+  height: 550px;
   background-color: #eef2f7;
   padding: 30px 30px 0 30px;
 }

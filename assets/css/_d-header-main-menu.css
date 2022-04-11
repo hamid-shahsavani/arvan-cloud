@@ -5,6 +5,7 @@
   background-color: rgb(255, 255, 255);
   z-index: 999;
   box-shadow: 0 30px 50px -3px rgb(0 0 0 / 10%);
+  position: relative;
 }
 
 .desktop-header .main-menu .c-container {
