@@ -1,6 +1,7 @@
 /* custom right to left grid system */
 
 /*  container */
+
 .container-fluid,
 .container,
 .c-container {
@@ -9,23 +10,48 @@
   width: 100%;
 }
 
-/* custom container */
 .c-container {
-  padding-inline-end: 30px !important;
-  padding-inline-start: 30px !important;
+  margin-inline-end: auto;
+  margin-inline-start: auto;
+  padding-inline-end: 16px;
+  padding-inline-start: 16px;
+}
+
+@media (min-width: 768px){
+  .c-container {
+    max-width: 768px;
+}
+}
+
+@media (min-width: 1024px){
+  .c-container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px){
+  .c-container {
+      max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .c-container {
+    max-width: 1536px;
+    padding: 0 30px;
+  }
 }
 
 /* break to new line */
 .row::after {
-  content: "";
+  content: '';
   display: table;
   clear: both;
 }
 
 /* append columns to row */
-[class^="c-"] {
+[class^='c-'] {
   float: right;
-  padding: 0 5px;
 }
 
 /* for all system */
@@ -550,6 +576,7 @@
   .container {
     width: 1320px;
   }
+
   .d-none-xxl {
     display: none;
   }

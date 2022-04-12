@@ -1,3 +1,8 @@
+.desktop-header .d-top-menu-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .desktop-header .top-menu {
   height: 50px;
   background-color: #f5f7fa;
@@ -13,7 +18,7 @@
 
 .desktop-header .top-menu .right a {
   display: inline-block;
-  margin-top: 13px;
+  margin: 13px;
 }
 .desktop-header .top-menu .right .text {
   color: var(--text-color);
@@ -54,6 +59,7 @@
 .desktop-header .top-menu .left .change-lang {
   position: relative;
   cursor: pointer;
+  margin-right: 15px;
 }
 
 .desktop-header .top-menu .left .change-lang span {
@@ -63,13 +69,17 @@
 
 .desktop-header .top-menu .left .change-lang .active-lang {
   min-height: 38px;
-  min-width: 120px;
+  min-width: 130px;
   background-color: #fff;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   transition: box-shadow 0.5s;
+}
+
+.change-lang img {
+  width: 35px;
 }
 
 .desktop-header .top-menu .left .change-lang .other {
@@ -86,7 +96,7 @@
 
 .desktop-header .top-menu .left .change-lang .other div {
   border-radius: 10px;
-  margin: 5px;
+  margin: 3px;
   padding: 3px;
   display: flex;
   align-items: center;
@@ -110,12 +120,4 @@
 
 .desktop-header .top-menu .left .change-lang .active-lang:hover {
   box-shadow: 0 0 30px #bfcede;
-}
-
-/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
-
-@media (max-width: 1200px) {
-  .desktop-header .top-menu {
-    display: none;
-  }
 }

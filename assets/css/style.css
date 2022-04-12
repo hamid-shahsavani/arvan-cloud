@@ -3,14 +3,27 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
   font-family: Vazirmatn, sans-serif;
   list-style-type: none;
   text-decoration: none;
 }
 
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
 body {
-  background-color: #efefef;
+  background-color: #F6F7FB;
+}
+
+.f-wrapper {
+  justify-content: space-between;
+  display: flex;
 }
 
 /** -------------------------------- variable -------------------------------- */

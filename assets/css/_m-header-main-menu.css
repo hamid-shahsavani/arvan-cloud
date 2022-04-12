@@ -5,6 +5,8 @@
   background-color: #fff;
   align-items: center;
   padding: 0 0 0px 0;
+  z-index: 99999;
+  position: relative;
 }
 
 .mobile-header .m-main-menu {

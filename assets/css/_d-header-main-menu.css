@@ -1,6 +1,13 @@
 /* ------------------------------------------------------ global -------------------------------------------------------- */
 
+.mobile-header {
+  display: none;
+  z-index: 999999;
+  position: relative;
+}
+
 .main-menu {
+  display: flex;
   height: 80px;
   background-color: rgb(255, 255, 255);
   z-index: 999;
@@ -10,6 +17,9 @@
 
 .desktop-header .main-menu .c-container {
   height: 80px;
+}
+
+.d-main-menu-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,6 +38,12 @@
 .main-menu .c-container .right .logo {
   display: flex;
   align-items: center;
+  margin-left: 15px;
+  transition: filter .5s;
+}
+
+.main-menu .c-container .right .logo:hover {
+  filter: invert(18%);
 }
 
 /* -=-=-=-=-=-=-=-=-=-=-=- menu -=-=-=-=-=-=-=-=-=-=-=-=-=-  */
