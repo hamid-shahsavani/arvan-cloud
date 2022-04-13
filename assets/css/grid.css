@@ -17,21 +17,21 @@
   padding-inline-start: 16px;
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
   .c-container {
     max-width: 768px;
-}
+  }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1024px) {
   .c-container {
     max-width: 1024px;
   }
 }
 
-@media (min-width: 1280px){
+@media (min-width: 1280px) {
   .c-container {
-      max-width: 1280px;
+    max-width: 1280px;
   }
 }
 

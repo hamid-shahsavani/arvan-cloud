@@ -1,4 +1,3 @@
-
 //? hide and show element with click function
 
 function hideAndShow(show, active) {
@@ -16,7 +15,38 @@ function hideAndShow(show, active) {
 //? run ready function
 
 $(document).ready(function () {
-  //* for desktop
+  //* ===> mobile & desktop
+
+  //? add active class to product-tab
+
+  $('.product-tab').click(function () {
+    let tabId = '#' + this.id.replace('tab', 'content');
+    $('.product-content').removeClass('active');
+    $(tabId).addClass('active');
+    $('.product-tab').removeClass('active');
+    $(this).addClass('active');
+  });
+
+  //* ===> for desktop
+
+  $(window).scroll(function () {
+    // for main-menu
+    let mainMenu = $('.main-menu'),
+      scrollMainMenu = $(window).scrollTop();
+    if (scrollMainMenu >= 200) {
+      mainMenu.addClass('main-menu-fixed');
+    } else {
+      mainMenu.removeClass('main-menu-fixed');
+    }
+    // for sub-menu
+    let subMenu = $('.sub-menu'),
+      scrollSubMenu = $(window).scrollTop();
+    if (scrollSubMenu >= 200) {
+      subMenu.addClass('sub-menu-fixed');
+    } else {
+      subMenu.removeClass('sub-menu-fixed');
+    }
+  });
 
   //? show language menu in desktop
 
@@ -47,7 +77,7 @@ $(document).ready(function () {
     });
   });
 
-  //* for mobile
+  //* ===> for mobile
 
   //? show language menu in mobile
 
@@ -60,8 +90,6 @@ $(document).ready(function () {
   //? add active class to mobile menu item and show sub-menu
 
   for (let i = 1; i <= 4; i++) {
-
-    hideAndShow('.m-sub-menu-' + i , '.m-item-' + i);
+    hideAndShow('.m-sub-menu-' + i, '.m-item-' + i);
   }
-
 });

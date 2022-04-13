@@ -39,7 +39,7 @@
   display: flex;
   align-items: center;
   margin-left: 15px;
-  transition: filter .5s;
+  transition: filter 0.5s;
 }
 
 .main-menu .c-container .right .logo:hover {
@@ -130,7 +130,7 @@
 /* ===> border-bottm */
 
 .main-menu li:after {
-  content: "";
+  content: '';
   display: block;
   top: 96%;
   border-bottom: 2px solid var(--base-color);
@@ -149,4 +149,14 @@
 
 .main-menu li.active a {
   color: var(--base-color) !important;
+}
+
+/* ===> show main-menu on scroll */
+
+.main-menu-fixed {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  transition: all 0.5s;
 }

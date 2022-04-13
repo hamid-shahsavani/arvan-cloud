@@ -6,7 +6,7 @@
   position: absolute;
   width: 100%;
   z-index: 998;
-  background: linear-gradient(90deg,#eef2f7 55%,#f5f7fa 0);
+  background: linear-gradient(90deg, #eef2f7 55%, #f5f7fa 0);
   box-shadow: 0 30px 50px -3px rgb(0 0 0 / 15%);
 }
 
@@ -20,10 +20,9 @@
 
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- right [for item 1,2,4,5] -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 
-
 .sub-menu .nav-content > div .left {
   width: 75%;
-  background-color: #EEF2F7;
+  background-color: #eef2f7;
 }
 
 .sub-menu .right {
@@ -276,13 +275,7 @@
   font-weight: 600;
 }
 
-.sub-menu
-  .item-4
-  .left
-  .right-content
-  .content
-  .list:nth-child(3)
-  .description {
+.sub-menu .item-4 .left .right-content .content .list:nth-child(3) .description {
   margin-top: 5px;
   color: #a0b5d3;
   font-size: 12px;
@@ -353,15 +346,7 @@
   font-weight: 400;
 }
 
-.sub-menu
-  .item-4
-  .left
-  .left-content
-  .content
-  .blog-post
-  .content
-  .button
-  .icon {
+.sub-menu .item-4 .left .left-content .content .blog-post .content .button .icon {
   font-size: 10px;
   vertical-align: -1px;
 }
@@ -438,4 +423,14 @@
 
 .sub-menu .item-5 .left .content .list:hover {
   background-color: #e2e9f1;
+}
+
+/* ===> show sub-menu on scroll */
+
+.sub-menu-fixed {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  transition: all 0.5s;
 }
