@@ -1,0 +1,101 @@
+
+/**------------------------------------------------------------------ global ------------------------------------------------------------- */
+
+main .access {
+  margin: 50px 0 100px 0;
+  display: flex;
+}
+
+main .access .c-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/** ----------------------------------------------------------------- header -------------------------------------------------------------- */
+
+/* title */
+
+main .access .title {
+  color: #6c819b;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+}
+
+main .access .title:before {
+  content: '';
+  background-color: var(--base-color);
+  width: 40px;
+  height: 2px;
+  position: absolute;
+  top: 120%;
+  right: 35%;
+}
+
+/* sub-title */
+
+main .access .sub-title {
+  color: #344456;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  margin-top: 20px;
+}
+
+/** ----------------------------------------------------------------- access-items -------------------------------------------------------------- */
+
+
+main .access-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin: 0 auto;
+}
+
+main .access-content-item {
+  height: 180px;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 0px 30px;
+  margin: 10px;
+  box-shadow: 0 30px 50px -3px #cfdae5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #fff;
+  transition: border 0.3s;
+}
+
+main .access-content-item .content-title {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #344456;
+  font-style: normal;
+  font-weight: 500;
+}
+
+main .access-content-item .content-sub-title {
+  color: #344456;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+}
+
+main .access-content-item:hover {
+  border: 3px solid var(--base-color);
+}
+
+/** ----------------------------------------------------------------- responsive -------------------------------------------------------------- */
+
+@media (max-width: 600px) {
+  main .access-wrapper {
+    grid-template-columns: repeat(1,minmax(200px,1fr)) !important;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1100px) {
+  main .access-wrapper {
+    grid-template-columns: repeat(2,1fr) !important;
+  }
+}

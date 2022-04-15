@@ -56,20 +56,20 @@
 
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 
-.desktop-header .top-menu .left .change-lang {
+.change-lang {
   position: relative;
   cursor: pointer;
   margin-right: 15px;
 }
 
-.desktop-header .top-menu .left .change-lang span {
+.change-lang span {
   color: var(--text-color);
   font-size: 16px;
 }
 
-.desktop-header .top-menu .left .change-lang .active-lang {
+.change-lang .active-lang-header {
   min-height: 38px;
-  min-width: 130px;
+  min-width: 120px;
   background-color: #fff;
   border-radius: 10px;
   display: flex;
@@ -82,7 +82,7 @@
   width: 35px;
 }
 
-.desktop-header .top-menu .left .change-lang .other {
+.change-lang .other {
   visibility: hidden;
   opacity: 0;
   position: absolute;
@@ -94,30 +94,30 @@
   transition: visibility 0.3s, opacity 0.3s;
 }
 
-.desktop-header .top-menu .left .change-lang .other div {
+.change-lang .other div {
   border-radius: 10px;
   margin: 3px;
   padding: 3px;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  transition: background-color 1s;
+  transition: background-color .5s;
 }
 
-.desktop-header .top-menu .left .change-lang .show {
+.change-lang .show {
   visibility: visible;
   opacity: 1;
   z-index: 999999999;
 }
 
-.desktop-header .top-menu .left .change-lang .other div:hover {
+.change-lang .other div:hover {
   background-color: #e9edf5;
 }
 
-.desktop-header .top-menu .left .change-lang .persian:hover {
+.change-lang .persian:hover {
   box-shadow: 1px 1px 1px 1px 1px #999;
 }
 
-.desktop-header .top-menu .left .change-lang .active-lang:hover {
+.change-lang .active-lang-header:hover {
   box-shadow: 0 0 30px #bfcede;
 }

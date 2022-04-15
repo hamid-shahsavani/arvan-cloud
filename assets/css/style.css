@@ -19,11 +19,7 @@ img {
 
 body {
   background-color: #F6F7FB;
-}
-
-.f-wrapper {
-  justify-content: space-between;
-  display: flex;
+  overflow-x: hidden;
 }
 
 /** -------------------------------- variable -------------------------------- */
@@ -32,4 +28,26 @@ body {
   --base-color: #00baba;
   --text-color: #465a71;
   --text-color-hover: #022522;
+}
+
+/** ---------------------------------- alert ---------------------------------- */
+
+.swal-overlay {
+  z-index: 9999999999 !important;
+}
+
+.swal-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.swal-button {
+  background-color: #00BABA;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.swal-button--confirm:hover {
+  box-shadow: 0 0 0 4px #bfeeee;
+  background-color: #00baba !important;
 }

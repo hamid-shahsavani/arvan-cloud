@@ -1,0 +1,141 @@
+/** ===> global */
+
+.map {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.map .map-wrapper {
+  text-align: center;
+}
+
+.map svg {
+  height: auto;
+  max-width: 1200px !important;
+  overflow: hidden;
+}
+
+/** ===> map header */
+
+.map .map-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+/* left */
+
+.map .map-header .left {
+  padding-left: 30px;
+  border-left: 1px solid var(--base-color);
+}
+
+.map .map-header .left .title {
+  color: #6c819b;
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+.map .map-header .left .title:after {
+  content: '';
+  background-color: var(--base-color);
+  width: 30px;
+  height: 2px;
+  margin-top: 5px;
+  display: block;
+}
+
+.map .map-header .left .sub-title {
+  font-size: 36px;
+  color: #344456;
+  font-weight: 700;
+}
+
+/* right */
+
+.map .map-header .right {
+  display: flex;
+  align-items: center;
+}
+.map .map-header .right .text {
+  font-size: 19px;
+  margin-right: 28px;
+  max-width: 752px;
+  color: #394460;
+  font-weight: 400;
+  text-align: justify;
+}
+
+/** ===> map footer */
+
+.map .map-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #eef2f7;
+  border-radius: 16px;
+  margin: 30px 0;
+}
+
+.map .map-footer .map-item {
+  display: flex;
+  gap: 15px;
+  min-width: 140px;
+}
+
+.map .map-footer .map-item .image {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px #bfcede;
+  display: flex;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+}
+
+.map .map-footer .map-item .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.map .map-footer .map-item .text .top {
+  text-align: left;
+  color: #344456;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.map .map-footer .map-item .text .bottom {
+  color: #008c8c;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+/** ===> responsive */
+
+@media (max-width: 1280px) {
+  .map .map-header {
+    flex-direction: column;
+  }
+  .map .map-header .left {
+    border: none !important;
+  }
+  .map .map-header .right .text {
+    margin: 0;
+  }
+  .map .map-footer {
+    overflow-x: scroll;
+    padding: 20px 40px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .map .map-footer {
+    overflow-x: hidden !important;
+  }
+}

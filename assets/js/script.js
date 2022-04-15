@@ -12,20 +12,39 @@ function hideAndShow(show, active) {
   });
 }
 
+//? add active class to product-tab & solution-tab
+
+function showAndHideTab(tabType) {
+  $(`.${tabType}-tab`).click(function () {
+    let tabId = '#' + this.id.replace('tab', 'content');
+    $(`.${tabType}-content`).removeClass('active');
+    $(tabId).addClass('active');
+    $(`.${tabType}-tab`).removeClass('active');
+    $(this).addClass('active');
+  });
+}
+
 //? run ready function
 
 $(document).ready(function () {
+  //* ===> show alert
+
+  swal({
+    title: "یه لحضه وایسا!",
+    text: "یه لحضه اینجارو ببین",
+    icon: "warning",
+    button: "بزن بریم!",
+  });
+
   //* ===> mobile & desktop
 
-  //? add active class to product-tab
+  //? show product tab content
 
-  $('.product-tab').click(function () {
-    let tabId = '#' + this.id.replace('tab', 'content');
-    $('.product-content').removeClass('active');
-    $(tabId).addClass('active');
-    $('.product-tab').removeClass('active');
-    $(this).addClass('active');
-  });
+  showAndHideTab('product');
+
+  //? show solution tab content
+
+  showAndHideTab('solution');
 
   //* ===> for desktop
 
@@ -48,11 +67,16 @@ $(document).ready(function () {
     }
   });
 
-  //? show language menu in desktop
+  //? show language menu header and footer in desktop
 
-  $('.active-lang').on('click', function () {
-    $('.other').toggleClass('show');
-  });
+  function showLangList(x) {
+    $(`.active-lang-${x}`).on('click', function () {
+      $('.other').toggleClass('show');
+    });
+  }
+
+  showLangList('header');
+  showLangList('footer');
 
   //? show and hide sub-menu in desktop
 

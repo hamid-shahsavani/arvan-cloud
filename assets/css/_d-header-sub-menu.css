@@ -7,7 +7,7 @@
   width: 100%;
   z-index: 998;
   background: linear-gradient(90deg, #eef2f7 55%, #f5f7fa 0);
-  box-shadow: 0 30px 50px -3px rgb(0 0 0 / 15%);
+  box-shadow: 0 30px 70px -3px rgb(0 0 0 / 15%);
 }
 
 .d-sub-menu-wrapper {

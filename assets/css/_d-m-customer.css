@@ -1,0 +1,132 @@
+/** ===> global */
+
+main .customer {
+  background: url('../img/main/customer/background.svg') repeat-x;
+  position: relative;
+  padding: 100px 0;
+}
+
+/** ===> title */
+
+main .customer .title {
+  color: #6c819b;
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+main .customer .title::after {
+  content: '';
+  background-color: var(--base-color);
+  width: 30px;
+  height: 2px;
+  margin-top: 5px;
+  display: block;
+}
+
+/** ===> sub-title-1 */
+
+main .customer .sub-title-1 {
+  font-size: 30px;
+  margin-bottom: 16px;
+  color: #374758;
+  font-weight: 900;
+}
+
+/** ===> sub-title-2 */
+
+main .customer .sub-title-2 {
+  color: #394460;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+/** customer comment */
+
+@keyframes loop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(1200px);
+  }
+}
+
+main .customer .customer-comment-section {
+  overflow: hidden;
+  width: 100%;
+  margin: 50px 0;
+}
+
+main .customer .customer-comment-wrapper {
+  animation: loop 40s linear infinite;
+  animation-direction: reverse;
+  display: flex;
+}
+
+main .customer .customer-comment-wrapper:hover,
+main .customer .customer-logo-wrapper:hover {
+  animation-play-state: paused;
+}
+
+main .customer .customer-comment {
+  background-color: #fff;
+  background: url(../img/main/customer/comment-quote.svg) no-repeat 30px 30px;
+  border-radius: 16px;
+  box-shadow: 0 0px 30px 0px #cfdae5;
+  border-radius: 12px;
+  margin: 20px;
+  min-height: 250px;
+  min-width: 368px;
+  padding: 30px;
+}
+
+main .customer .customer-comment .logo {
+  width: 100px;
+}
+
+main .customer .customer-comment .comment {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 20px 0;
+  min-height: 100px;
+  color: #566e88;
+  text-align: justify;
+}
+
+main .customer .customer-comment .author {
+  color: #27304a;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+/** customer logo */
+
+main .customer .customer-logo svg {
+  height: 40px;
+}
+
+main .customer .customer-logo-section {
+  overflow: hidden;
+  width: 100%;
+}
+
+main .customer .customer-logo-wrapper {
+  animation: loop 40s linear infinite;
+  display: flex;
+}
+main .customer .customer-logo {
+    margin: 0 30px;
+}
+
+@media (max-width: 1280px) {
+    main .product .product-wrapper {
+        padding-bottom: 50px;
+    }
+    main .customer .sub-title-1 {
+        font-size: 22px;
+        margin-bottom: 16px;
+        color: #374758;
+        font-weight: 900;
+    }
+}
