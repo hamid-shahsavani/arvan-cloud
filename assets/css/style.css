@@ -1404,6 +1404,9 @@ main .access-content-item:hover {
 
 /** ------------------------------------------------------------------ top-footer ------------------------------------------------------------- */
 
+footer {
+  overflow-x: hidden !important;
+}
 footer > div {
   display: flex;
   background-color: #003049;
