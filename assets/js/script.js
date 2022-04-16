@@ -4,7 +4,7 @@
 
 document.onreadystatechange = function () {
   let state = document.readyState
-  if (state == 'complete') {
+  if (state == 'comlete') {
     $('body').addClass('loaded');
     $('body').css({"overflow-y":"visible"});
   }

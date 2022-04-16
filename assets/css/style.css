@@ -42,7 +42,7 @@ body {
   height: 100%;
   display: flex;
   justify-content: center;
-  z-index: 9999999999999999999999999999999999 !important;
+  z-index: 9999999999999999999999999999 !important;
 }
 
 .loading-animation .background {
@@ -57,7 +57,7 @@ body {
   border-top-color: #16a085;
   -webkit-animation: spin 1.7s linear infinite;
   animation: spin 1.7s linear infinite;
-  z-index: 99999999999999999999999999999999999 !important;
+  z-index: 999999999999999999999999999 !important;
 }
 .loading-animation .background:before {
   content: '';
@@ -180,6 +180,9 @@ body {
 
 @media (max-width: 1000px) {
   .swal-overlay {
+    display: none !important;
+  }
+  .loading-animation {
     display: none !important;
   }
 }
