@@ -179,9 +179,6 @@ body {
 }
 
 @media (max-width: 1000px) {
-  .swal-overlay {
-    display: none !important;
-  }
   .loading-animation {
     display: none !important;
   }

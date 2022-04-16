@@ -1,15 +1,5 @@
 //* copyright SYS113 / 2022 - april.
 
-//? show loading before load content
-
-document.onreadystatechange = function () {
-  let state = document.readyState
-  if (state == 'comlete') {
-    $('body').addClass('loaded');
-    $('body').css({"overflow-y":"visible"});
-  }
-}
-
 //? hide and show element with click function
 
 function hideAndShow(show, active) {
@@ -39,13 +29,24 @@ function showAndHideTab(tabType) {
 //? run ready function
 
 $(document).ready(function () {
-
-  swal({
-    title: "یک لحضه وایسا ...",
-    text: "اینجا صرفا یک صفحه غیر رسمی از وب سایت آروان کلود هست!",
-    icon: "warning",
-    button: "بزن بریم!",
-  });
+  //? hide loading animation in mobile and tablet
+  if (matchMedia('(min-width: 1000px)').matches) {
+    document.onreadystatechange = function () {
+      //? show loading before load content in desktop
+      let state = document.readyState;
+      if (state == 'complete') {
+        $('body').addClass('loaded');
+        $('body').css({ 'overflow-y': 'visible' });
+      }
+    };
+    //? show alert in desktop
+    swal({
+      title: 'یک لحضه وایسا ...',
+      text: 'اینجا صرفا یک صفحه غیر رسمی از وب سایت آروان کلود هست!',
+      icon: 'warning',
+      button: 'بزن بریم!',
+    });
+  }
 
   //* ===> mobile & desktop
 
