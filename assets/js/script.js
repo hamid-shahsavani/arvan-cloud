@@ -1,5 +1,15 @@
 //* copyright SYS113 / 2022 - april.
 
+//? show loading before load content
+
+document.onreadystatechange = function () {
+  let state = document.readyState
+  if (state == 'complete') {
+    $('body').addClass('loaded');
+    $('body').css({"overflow-y":"visible"});
+  }
+}
+
 //? hide and show element with click function
 
 function hideAndShow(show, active) {
