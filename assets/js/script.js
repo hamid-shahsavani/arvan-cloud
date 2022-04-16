@@ -29,6 +29,14 @@ function showAndHideTab(tabType) {
 //? run ready function
 
 $(document).ready(function () {
+
+  swal({
+    title: "یک لحضه وایسا ...",
+    text: "اینجا صرفا یک صفحه غیر رسمی از وب سایت آروان کلود هست!",
+    icon: "warning",
+    button: "بزن بریم!",
+  });
+
   //* ===> mobile & desktop
 
   //? show product tab content
