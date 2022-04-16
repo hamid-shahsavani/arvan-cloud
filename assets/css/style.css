@@ -572,6 +572,14 @@ main .product .product-content .image {
     border-radius: 10px;
   }
 
+  main .product .product-tab {
+    background: #E5EBF3 !important;
+  }
+
+  main .product .product-tab.active {
+    background: #fff !important;
+  }
+
   main .product .sub-title {
     font-size: 30px !important;
   }
@@ -1008,7 +1016,6 @@ main .solution .description {
 main .solution-tab-wrapper {
   display: flex;
   justify-content: center;
-  gap: 30px;
   margin: 30px 0;
   width: 100%;
 }
@@ -1016,7 +1023,7 @@ main .solution-tab-wrapper {
 main .solution-tab {
   display: flex;
   cursor: pointer;
-  gap: 10px;
+  margin: 0 15px;
 }
 
 main .solution-tab .text {
@@ -1062,7 +1069,6 @@ main .product-content-wrapper {
 
 main .solution-content {
   display: none;
-  gap: 25px;
 }
 
 main .solution-content.active {
@@ -1084,6 +1090,7 @@ main .solution-content-item {
   justify-content: center;
   border: 3px solid #fff;
   transition: border 0.3s;
+  margin: 10px 10px;
 }
 
 main .solution-content-item .content-title {
@@ -1110,13 +1117,13 @@ main .solution-content-item:hover {
 @media (max-width: 600px) {
   /* product tab */
   main .solution-tab-wrapper {
-    gap: 10px;
     overflow: auto;
   }
   main .solution-tab {
     background-color: #e5ebf3;
     border-radius: 12px;
     color: #7a90aa;
+    margin: 0 5px !important;
   }
   main .solution-tab .text {
     font-weight: 700;
@@ -1212,7 +1219,6 @@ main .solution-content-item:hover {
 
 .banner-wrapper .text .buttons {
   display: flex;
-  gap: 20px;
 }
 
 .banner-wrapper .text .buttons a {
@@ -1228,6 +1234,7 @@ main .solution-content-item:hover {
   color: var(--base-color);
   border-radius: 12px;
   transition: box-shadow 0.5s;
+  margin: 10px;
 }
 
 .banner-wrapper .text .buttons a:hover {
@@ -1465,13 +1472,15 @@ footer > div {
 
 .bottom-footer .top .right {
   display: flex;
-  gap: 20px;
 }
 
 .bottom-footer .top .right ul {
   display: flex;
   align-items: center;
-  gap: 30px;
+}
+
+.bottom-footer .top .right ul li {
+  margin: 0 10px;
 }
 
 .bottom-footer .top .right ul li a {
@@ -1495,6 +1504,7 @@ footer > div {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-right: 15px;
 }
 
 .change-lang-footer {
@@ -1528,7 +1538,6 @@ footer > div {
 
 .bottom-footer .top .left {
   display: flex;
-  gap: 10px;
 }
 
 .bottom-footer .top .left .social {
@@ -1540,6 +1549,7 @@ footer > div {
   width: 40px;
   justify-content: center;
   align-items: center;
+  margin: 0 5px;
 }
 
 .bottom-footer .top .left .social svg {
@@ -1578,7 +1588,7 @@ footer > div {
 
 .bottom-footer .bottom .right .copyright {
   color: #fff;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   padding-top: 3px;
 }
@@ -1587,7 +1597,10 @@ footer > div {
 
 .bottom-footer .bottom .left {
   display: flex;
-  gap: 20px;
+}
+
+.bottom-footer .bottom .left .company-logo {
+  margin: 0 7px;
 }
 
 .bottom-footer .bottom .left .company-logo svg {
