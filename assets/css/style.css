@@ -1518,6 +1518,10 @@ footer > div {
   margin: 0 !important;
 }
 
+.change-lang-footer .other {
+    margin-right: 12px;
+}
+
 .change-lang-footer .other span {
   color: #fff !important;
 }
