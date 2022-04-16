@@ -182,6 +182,9 @@ body {
   .loading-animation {
     display: none !important;
   }
+  body {
+    overflow-y: visible;
+  }
 }
 
 /*! ---------------------------------------------------------- custom grid system for responsive ----------------------------------------------------------------------------- */
