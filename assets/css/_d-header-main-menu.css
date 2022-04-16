@@ -1,4 +1,6 @@
-/* ------------------------------------------------------ global -------------------------------------------------------- */
+/*! ---------------------------------------------------------------------------- m-main-menu ------------------------------------------------------------------------------ */
+
+/** ------------------------------------------------------ global -------------------------------------------------------- */
 
 .mobile-header {
   display: none;
@@ -31,9 +33,9 @@
   font-size: 17px;
 }
 
-/* ------------------------------------------------------ right -------------------------------------------------------- */
+/** ------------------------------------------------------ right -------------------------------------------------------- */
 
-/* -=-=-=-=-=-=-=-=-=-=-=- logo -=-=-=-=-=-=-=-=-=-=-=-=-=-  */
+/*? ===> logo */
 
 .main-menu .c-container .right .logo {
   display: flex;
@@ -46,7 +48,7 @@
   filter: invert(18%);
 }
 
-/* -=-=-=-=-=-=-=-=-=-=-=- menu -=-=-=-=-=-=-=-=-=-=-=-=-=-  */
+/*? ===> menu */
 
 .main-menu .c-container .right ul {
   display: flex;
@@ -64,7 +66,7 @@
 }
 
 .main-menu .c-container .right ul li a {
-  color: var(--text-color);
+  color: #465a71;
   transition: color 0.5s;
 }
 
@@ -75,15 +77,15 @@
   transition: transform 0.8s;
 }
 
-/* -=-=-=-=-=-=-=-=-=-=- hover effect -=-=-=-=-=-=-=-=-=-=-=-=-=-=-  */
+/*? ===> hover effect */
 
 .main-menu .c-container .right ul li a:hover {
   color: var(--base-color);
 }
 
-/* ------------------------------------------------------ left -------------------------------------------------------- */
+/** ------------------------------------------------------ left -------------------------------------------------------- */
 
-/* -=-=-=-=-=-=-=-=-=-=- register button -=-=-=-=-=-=-=-=-=-=-=-=-=-=-  */
+/*? ===> register button */
 
 .main-menu .c-container .left .register {
   margin-right: 10px;
@@ -98,7 +100,7 @@
   transition: box-shadow 0.5s;
 }
 
-/* -=-=-=-=-=-=-=-=-=-=- login button -=-=-=-=-=-=-=-=-=-=-=-=-=-=-  */
+/*? ===> login button */
 
 .main-menu .c-container .left .login {
   display: flex;
@@ -112,22 +114,22 @@
   transition: box-shadow 0.5s;
 }
 
-/* -=-=-=-=-=-=-=-=-=-=- hover effect -=-=-=-=-=-=-=-=-=-=-=-=-=-=-  */
+/*? ===> hover effect */
 
 .main-menu .c-container .left .login:hover,
 .main-menu .c-container .left .register:hover {
   box-shadow: 0 0 0 3px #bfeeee;
 }
 
-/* -=-=-=-=-=-=-=-=-=-=- active effect -=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+/*? ===> active effect */
 
-/* ===> icon */
+/* icon */
 
 .main-menu li.active a i {
   transform: rotate(180deg);
 }
 
-/* ===> border-bottm */
+/* border-bottm */
 
 .main-menu li:after {
   content: '';
@@ -145,13 +147,13 @@
   width: 100%;
 }
 
-/* ===> text color */
+/* text color */
 
 .main-menu li.active a {
   color: var(--base-color) !important;
 }
 
-/* ===> show main-menu on scroll */
+/*? ===> show main-menu on scroll */
 
 .main-menu-fixed {
   position: fixed;

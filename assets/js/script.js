@@ -1,3 +1,5 @@
+//* copyright SYS113 / 2022 - april.
+
 //? hide and show element with click function
 
 function hideAndShow(show, active) {
@@ -27,15 +29,6 @@ function showAndHideTab(tabType) {
 //? run ready function
 
 $(document).ready(function () {
-  //* ===> show alert
-
-  swal({
-    title: "یه لحضه وایسا!",
-    text: "یه لحضه اینجارو ببین",
-    icon: "warning",
-    button: "بزن بریم!",
-  });
-
   //* ===> mobile & desktop
 
   //? show product tab content
@@ -80,9 +73,9 @@ $(document).ready(function () {
 
   //? show and hide sub-menu in desktop
 
-  $('.nav-content').hide();
+  $('.main-menu-content').hide();
 
-  $('.nav-tab').on('click', function () {
+  $('.main-menu-tab').on('click', function () {
     let clickedId = $(this).attr('id');
     let clickedIdContent = clickedId.replace('-tab', '');
     if ($('#' + clickedId).hasClass('active')) {
@@ -90,13 +83,13 @@ $(document).ready(function () {
       $('#' + clickedIdContent).slideUp('slow');
       return 0;
     }
-    $('.nav-tab').each(function (index) {
+    $('.main-menu-tab').each(function (index) {
       if ($(this).attr('id') == clickedId) {
-        $('.nav-tab,.nav-content').eq(index).addClass('active');
-        $('.nav-content').eq(index).slideDown();
+        $('.main-menu-tab,.main-menu-content').eq(index).addClass('active');
+        $('.main-menu-content').eq(index).slideDown();
       } else {
-        $('.nav-tab,.nav-content').eq(index).removeClass('active');
-        $('.nav-content').eq(index).hide();
+        $('.main-menu-tab,.main-menu-content').eq(index).removeClass('active');
+        $('.main-menu-content').eq(index).hide();
       }
     });
   });

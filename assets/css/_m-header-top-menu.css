@@ -1,10 +1,12 @@
-/* ---> hide main menu in mobile */
+/*! -------------------------------------------------------------------- m-header-top-menu ------------------------------------------------------------------------ */
+
+/* hide main menu in mobile */
 
 header > .desktop-header {
   display: none !important;
 }
 
-/* ---> show mobile header */
+/* show mobile header */
 
 .mobile-header {
   background-color: #fff;
@@ -12,21 +14,25 @@ header > .desktop-header {
   display: block;
 }
 
-.mobile-header .m-top-menu {
-  padding: 0 10px;
+.m-top-menu {
   width: 100%;
   height: 60px;
   display: flex;
   align-items: center;
 }
 
-.mobile-header > .m-top-menu > div {
-  display: flex;
-  width: 50%;
+.mobile-header .m-top-menu > div {
+  display: flex !important;
+  width: 50% !important;
 }
 
-.mobile-header > .m-top-menu > .logo {
+.mobile-header .m-top-menu > .logo {
   margin-top: 10px;
+}
+
+.mobile-menu-button {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .mobile-header > .m-top-menu > div:nth-child(2) {
@@ -34,7 +40,7 @@ header > .desktop-header {
   justify-content: left;
 }
 
-/* ---> show mobile menu button */
+/* show mobile menu button */
 
 .mobile-header .m-top-menu .btn {
   background: rgb(255, 255, 255);

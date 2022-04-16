@@ -1,4 +1,6 @@
-/**------------------------------------------------------------------ top-footer ------------------------------------------------------------- */
+/*! -------------------------------------------------------------------- d-m-footer ------------------------------------------------------------------------ */
+
+/** ------------------------------------------------------------------ top-footer ------------------------------------------------------------- */
 
 footer > div {
   display: flex;
@@ -46,7 +48,7 @@ footer > div {
   color: #fff;
 }
 
-/**------------------------------------------------------------------ bottom-footer ------------------------------------------------------------- */
+/** ------------------------------------------------------------------ bottom-footer ------------------------------------------------------------- */
 
 /*? ===> global */
 
@@ -203,48 +205,50 @@ footer > div {
 }
 
 .bottom-footer .bottom .left .company-logo {
-    width: 25px;
+  width: 25px;
 }
 .bottom-footer .bottom .left .company-logo span {
-    align-items: center;
-    background-color: #00baba;
-    border-radius: 4px;
-    bottom: calc(100% + 7px);
-    color: #002437;
-    display: flex;
-    font-size: 10px;
-    height: 20px;
-    min-width: 120px;
-    position: relative;
-    padding: 0 4px;
-    opacity: 0;
-    text-align: center;
-    transform: translate(50%); 
-    transition: opacity .5s ease-in-out;
+  align-items: center;
+  background-color: #00baba;
+  border-radius: 4px;
+  bottom: calc(100% + 7px);
+  color: #002437;
+  display: flex;
+  font-size: 10px;
+  height: 20px;
+  min-width: 120px;
+  position: relative;
+  padding: 0 4px;
+  opacity: 0;
+  text-align: center;
+  transform: translate(50%);
+  transition: opacity 0.5s ease-in-out;
 }
 
 .bottom-footer .bottom .left .company-logo:hover span {
-    opacity: 1;
+  opacity: 1;
 }
 
 /**------------------------------------------------------------------ responsive ------------------------------------------------------------- */
 
 @media (max-width: 750px) {
-    .top-footer-wrapper {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-    }
-    .bottom-footer .bottom , .bottom-footer .top {
-        flex-direction: column;
-        align-items: center;
-    }
-    .bottom-footer .bottom .right , .bottom-footer .top .right {
-        margin-bottom: 20px !important;
-    }
+  .top-footer-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .bottom-footer .bottom,
+  .bottom-footer .top {
+    flex-direction: column;
+    align-items: center;
+  }
+  .bottom-footer .bottom .right,
+  .bottom-footer .top .right {
+    margin-bottom: 20px !important;
+  }
 }
 @media (min-width: 641px) and (max-width: 1280px) {
-    .top-footer-wrapper {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
-      }
+  .top-footer-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
 }

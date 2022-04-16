@@ -1,4 +1,7 @@
-/* ---> show main-menu */
+
+/*! -------------------------------------------------------------------- m-header-main-menu ------------------------------------------------------------------------ */
+
+/* show main-menu */
 
 .mobile-header .m-show-menu {
   border-top: 1px solid #f2f4f7;
@@ -7,6 +10,12 @@
   padding: 0 0 0px 0;
   z-index: 99999;
   position: relative;
+}
+
+.mobile-header .c-container {
+  background-color: #fff;
+  max-width: 100% !important;
+  padding: 0 20px;
 }
 
 .mobile-header .m-main-menu {
@@ -19,15 +28,10 @@
   display: flex;
   justify-content: space-between;
   padding: 10px 0;
-  margin: 0 25px;
+  margin: 0 0 0 13px;
 }
 
-/* hi */
-/** hi */
-/*! hi */
-/*? hi */
-
-/* ---> show links [ top-menu in desktop ] */
+/* show links [ top-menu in desktop ] */
 
 .mobile-header .m-links {
   color: #8499b7;
@@ -44,6 +48,9 @@
   border-bottom: 1px solid #b2c2d6;
 }
 
+.mobile-header .m-change-lang-sub img {
+  width: 25px !important;
+}
 .mobile-header .m-links .m-change-lang i {
   width: 10px;
   height: 10px;

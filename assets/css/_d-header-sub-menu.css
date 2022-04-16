@@ -1,6 +1,5 @@
-/* ---------------------------------------------------------------------------- sub-menu ------------------------------------------------------------------------------ */
-
-/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- global -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+/*! ---------------------------------------------------------------------------- d-sub-menu ------------------------------------------------------------------------------ */
+/** ------------------------------------------------------ global -------------------------------------------------------- */
 
 .sub-menu {
   position: absolute;
@@ -18,9 +17,9 @@
   height: 550px;
 }
 
-/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- right [for item 1,2,4,5] -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+/** --------------------------------------------- right [for item 1,2,4,5] ------------------------------------------------  */
 
-.sub-menu .nav-content > div .left {
+.sub-menu .main-menu-content > div .left {
   width: 75%;
   background-color: #eef2f7;
 }
@@ -32,7 +31,7 @@
   padding: 30px 0 10px 30px;
 }
 
-/* ===> right - header */
+/*? ===> right - header */
 
 .sub-menu .right .right-header {
   border-bottom: 1px solid #b2c2d6;
@@ -42,7 +41,7 @@
   padding-bottom: 16px;
 }
 
-/* ===> right - main */
+/*? ===> right - main */
 
 .sub-menu .right .right-main {
   margin: 10px 0 10px 10px;
@@ -72,7 +71,7 @@
   font-size: 12px;
 }
 
-/*  ===> right - main - hover effect */
+/*? ===> right - main - hover effect */
 
 .sub-menu .right .right-main .list:hover {
   background-color: #e7ecf4;
@@ -82,9 +81,9 @@
   color: var(--base-color);
 }
 
-/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- left [for item-1] -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+/** -------------------------------------------------- left [for item-1 ] ------------------------------------------------------  */
 
-/* ===> global - left [for item-1] */
+/*? ===> global - left [for item-1] */
 
 .sub-menu .item-1 .left {
   height: 550px;
@@ -92,7 +91,7 @@
   padding: 30px 30px 10px 0px;
 }
 
-/* ===> left - header  [ for item-1] */
+/*? ===> left - header  [ for item-1] */
 
 .sub-menu .item-1 .left .left-header {
   border-bottom: 1px solid #b2c2d6;
@@ -102,7 +101,7 @@
   padding-bottom: 16px;
 }
 
-/* ===> left - main [ for item-1] */
+/*? ===> left - main [ for item-1] */
 
 .sub-menu .item-1 .left .left-main {
   display: flex;
@@ -143,15 +142,15 @@
   transition: color 0.5s;
 }
 
-/* ===> left - main - hover  [ for item-1] */
+/*? ===> left - main - hover  [ for item-1] */
 
 .sub-menu .item-1 .left .left-main .content .links ul li a:hover {
   color: var(--base-color);
 }
 
-/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- left [for item-2] -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+/** -------------------------------------------------- left [for item-2] ------------------------------------------------------  */
 
-/* ===> left - global [for item-2] */
+/*? ===> left - global [for item-2] */
 
 .sub-menu .item-2 .left {
   height: 550px;
@@ -165,7 +164,7 @@
   width: 50% !important;
 }
 
-/* ===> left - header [ for item-2] */
+/*? ===> left - header [ for item-2] */
 
 .sub-menu .item-2 .left > div {
   width: 50% !important;
@@ -180,7 +179,7 @@
   padding-bottom: 16px;
 }
 
-/* ===> left - content [for item-2] */
+/*? ===> left - content [for item-2] */
 
 .sub-menu .item-2 .left .content .list {
   margin-top: 15px;
@@ -202,15 +201,15 @@
   font-size: 12px;
 }
 
-/* ===> left - content - hover effect [for item-2] */
+/*? ===> left - content - hover effect [for item-2] */
 
 .sub-menu .item-2 .left .content .list:hover {
   background-color: #e2e9f1;
 }
 
-/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- left [for item-4] -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+/** -------------------------------------------------- left [for item -4] ------------------------------------------------------  */
 
-/* ===> left - global [for item-4] */
+/*? ===> left - global [for item-4] */
 
 .sub-menu .item-4 .left {
   height: 550px;
@@ -226,7 +225,7 @@
   border-left: 1px solid #b2c2d6;
 }
 
-/* ===> left - right-content - header [for item-4] */
+/*? ===> left - right-content - header [for item-4] */
 
 .sub-menu .item-4 .left .left-content {
   padding: 0 20px;
@@ -241,7 +240,7 @@
   padding: 30px 0 16px 0;
 }
 
-/* ===> left - right-content - content [for item-4] */
+/*? ===> left - right-content - content [for item-4] */
 
 .sub-menu .item-4 .left .right-content .content .list {
   margin-top: 15px;
@@ -263,7 +262,7 @@
   font-size: 12px;
 }
 
-/* ===> left - right-content - content-disable [for item-4] */
+/*? ===> left - right-content - content-disable [for item-4] */
 
 .sub-menu .item-4 .left .right-content .content .list:nth-child(3) {
   pointer-events: none;
@@ -281,13 +280,13 @@
   font-size: 12px;
 }
 
-/* ===> left - right-content - content - hover effect [for item-4] */
+/*? ===> left - right-content - content - hover effect [for item-4] */
 
 .sub-menu .item-4 .left .right-content .content .list:hover {
   background-color: #e2e9f1;
 }
 
-/* ===> left - left-content - header [for item-4] */
+/*? ===> left - left-content - header [for item-4] */
 
 .sub-menu .item-4 .left .left-content .header {
   border-bottom: 1px solid #b2c2d6;
@@ -357,7 +356,7 @@
   padding-top: 4px;
 }
 
-/* ===> left - left-content - main - responsive blog post [for item-4] */
+/*? ===> left - left-content - main - responsive blog post [for item-4] */
 
 @media (max-width: 1535px) {
   .sub-menu .item-4 .left .left-content .content {
@@ -374,7 +373,7 @@
   }
 }
 
-/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- left [for item-5] -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+/** -------------------------------------------------- left [for item-5] ------------------------------------------------------  */
 
 .sub-menu .item-5 .left {
   height: 550px;
@@ -382,7 +381,7 @@
   padding: 30px 30px 0 30px;
 }
 
-/* ===> left - header [for item-5] */
+/* left - header [for item-5] */
 
 .sub-menu .item-5 .left .header {
   border-bottom: 1px solid #b2c2d6;
@@ -392,7 +391,7 @@
   padding-bottom: 16px;
 }
 
-/* ===> left - content [for item-5] */
+/* left - content [for item-5] */
 
 .sub-menu .item-5 .left .content {
   display: grid;
@@ -425,7 +424,7 @@
   background-color: #e2e9f1;
 }
 
-/* ===> show sub-menu on scroll */
+/* show sub-menu on scroll */
 
 .sub-menu-fixed {
   position: fixed;

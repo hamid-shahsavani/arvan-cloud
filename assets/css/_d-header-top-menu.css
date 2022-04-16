@@ -1,4 +1,8 @@
-.desktop-header .d-top-menu-wrapper {
+/*! ---------------------------------------------------------------------------- d-top-menu ------------------------------------------------------------------------------ */
+
+/** ------------------------------------------------------ global -------------------------------------------------------- */
+
+.d-top-menu-wrapper {
   display: flex;
   justify-content: space-between;
 }
@@ -10,7 +14,7 @@
   align-items: center;
 }
 
-/* -------------------------------------------------------------------------------------- */
+/** ------------------------------------------------------ right -------------------------------------------------------- */
 
 .desktop-header .top-menu .right {
   height: 50px;
@@ -18,19 +22,19 @@
 
 .desktop-header .top-menu .right a {
   display: inline-block;
-  margin: 13px;
+  margin: 13px 0 13px 13px;
 }
 .desktop-header .top-menu .right .text {
-  color: var(--text-color);
+  color: #465a71;
   font-size: 16px;
-  transition: all 1s;
+  transition: color 1s;
 }
 
 .desktop-header .top-menu .right:hover .text {
-  color: var(--text-color-hover);
+  color: #022522;
 }
 
-/* -------------------------------------------------------------------------------------- */
+/** ------------------------------------------------------ left -------------------------------------------------------- */
 
 .desktop-header .top-menu .left {
   display: flex;
@@ -45,16 +49,16 @@
 }
 
 .desktop-header .top-menu .left .menu ul li a {
-  color: var(--text-color);
+  color: #465a71;
   font-size: 16px;
   transition: all 1s;
 }
 
 .desktop-header .top-menu .left .menu ul li a:hover {
-  color: var(--text-color-hover);
+  color: #022522;
 }
 
-/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+/*? change lang button */
 
 .change-lang {
   position: relative;
@@ -63,7 +67,7 @@
 }
 
 .change-lang span {
-  color: var(--text-color);
+  color: #465a71;
   font-size: 16px;
 }
 
@@ -101,7 +105,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  transition: background-color .5s;
+  transition: background-color 0.5s;
 }
 
 .change-lang .show {

@@ -1,4 +1,6 @@
-/** -------------------------------- css reset ------------------------------- */
+/** copyright SYS113 / 2022 - april. */
+
+/*! ---------------------------------------------------------- css reset ---------------------------------------------------------------- */
 
 * {
   padding: 0;
@@ -22,32 +24,8 @@ body {
   overflow-x: hidden;
 }
 
-/** -------------------------------- variable -------------------------------- */
+/*! ---------------------------------------------------------- variable ---------------------------------------------------------------- */
 
 :root {
   --base-color: #00baba;
-  --text-color: #465a71;
-  --text-color-hover: #022522;
-}
-
-/** ---------------------------------- alert ---------------------------------- */
-
-.swal-overlay {
-  z-index: 9999999999 !important;
-}
-
-.swal-footer {
-  display: flex;
-  justify-content: center;
-}
-
-.swal-button {
-  background-color: #00BABA;
-  border-radius: 10px;
-  transition: 1s;
-}
-
-.swal-button--confirm:hover {
-  box-shadow: 0 0 0 4px #bfeeee;
-  background-color: #00baba !important;
 }

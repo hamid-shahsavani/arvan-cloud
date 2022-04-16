@@ -1,4 +1,6 @@
-/* ----------------------------------- global ------------------------------------ */
+/*! -------------------------------------------------------------------- d-m-main-product ------------------------------------------------------------------------ */
+
+/** ------------------------------------------------------ global -------------------------------------------------------- */
 
 main .product {
   display: flex;
@@ -8,8 +10,8 @@ main .product .product-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 150px;
-  padding-top: 100px;
+  padding-bottom: 60px;
+  padding-top: 40px;
 }
 
 main .product .product-wrapper > .title {
@@ -36,13 +38,13 @@ main .product .sub-title {
   text-align: center;
 }
 
-/* ------------------------------ product tab --------------------------------- */
+/** ------------------------------------------------------ product-tab -------------------------------------------------------- */
 
 /*? global */
 
 main .product .product-tab-wrapper {
   display: flex;
-  gap: 50px;
+  gap:30px;
 }
 
 main .product .product-tab {
@@ -60,7 +62,7 @@ main .product .product-tab .text {
   transition: color 0.2s ease-in-out;
 }
 
-/*? hover effect */
+/* hover effect */
 
 main .product .product-tab .text:after {
   display: block;
@@ -74,7 +76,7 @@ main .product .product-tab .text:hover {
   color: var(--base-color);
 }
 
-/*? active effect */
+/* active effect */
 
 main .product .product-tab.active .text {
   color: var(--base-color);
@@ -86,6 +88,11 @@ main .product .product-tab.active .text:after {
 
 main .product .product-tab.active .icon {
   display: block;
+}
+
+main .product .product-tab.active .icon svg{
+  width: 40px;
+  height: 35px;
 }
 
 main .product .product-tab.active .icon svg #productsCDNCircle {
@@ -109,9 +116,9 @@ main .product .product-tab.active .content {
   border-radius: 30px;
 }
 
-/* ---------------------------- product content -------------------------------- */
+/** ------------------------------------------------------ product-content -------------------------------------------------------- */
 
-/*? global */
+/* global */
 
 main .product .product-content-wrapper {
   padding: 0 70px;
@@ -128,7 +135,7 @@ main .product .product-content {
   display: none;
 }
 
-/*? content */
+/* content */
 
 main .product .product-content .content {
   width: 50%;
@@ -162,19 +169,19 @@ main .product .product-content .content .button {
   transition: color 0.2s ease-in-out;
 }
 
-/*? hover effect */
+/* hover effect */
 
 main .product .product-content .content .button:hover {
   color: #00a7a7;
 }
 
-/*? active effect */
+/* active effect */
 
 main .product .product-content.active {
   display: flex;
 }
 
-/*? image */
+/* image */
 
 main .product .product-content .image {
   display: flex;
@@ -184,15 +191,17 @@ main .product .product-content .image {
   height: inherit;
 }
 
-/* -------------------------------------- responsive ----------------------------------------- */
+/** ------------------------------------------------------ responsive -------------------------------------------------------- */
 
 @media (max-width: 599px) {
   main .product .product-tab-wrapper {
+    width: 98%;
+    height: 45px;
+    overflow-y: hidden;
+    overflow-x: scroll !important;
     gap: 10px;
-  }
-
-  main .product .product-tab {
-    height: 40px !important;
+    display: flex;
+    justify-content: center;
   }
 
   main .product .sub-title {
@@ -203,35 +212,45 @@ main .product .product-content .image {
     display: none !important;
   }
 
+  main .product .product-tab.active .icon {
+    display: flex !important;
+  }
+
+  main .product .product-tab.active .icon svg{
+    width: 35px;
+    height:35px;
+  }
+
   main .product .product-tab .text::after {
     border: none;
   }
 
   main .product .product-tab {
+    justify-content: space-around;
     gap: 0;
     background-color: #eef2f7;
     border-radius: 7px;
-    height: 30px !important;
     display: flex;
     align-items: center;
-    padding: 5px 8px;
+    min-width: 100px;
+    height: 35px !important;
   }
 
   main .product .product-tab.active {
     gap: 0;
     background-color: #fff;
-    height: 30px !important;
+    padding: 5px 0;
+    height: 35px !important;
+    min-width: 110px !important;
   }
 
   main .product .product-tab .text {
-    font-size: 9px !important;
+    font-size: 16px !important;
+    font-weight: 700;
   }
 }
 
 @media (min-width: 600px) and (max-width: 1020px) {
-  main .product .product-tab .icon {
-    display: none;
-  }
 
   main .product .product-tab.active .icon {
     display: block;
@@ -271,13 +290,13 @@ main .product .product-content .image {
 }
 
 @media (max-width: 1280px) {
-  /* ===> global */
+  /* global */
 
   main .product .product-content-wrapper {
     padding-top: 30px;
   }
 
-  /* ===> product content */
+  /* product content */
 
   main .product .product-content-wrapper {
     height: auto;
