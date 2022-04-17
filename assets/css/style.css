@@ -23,8 +23,8 @@ img {
 
 body {
   background-color: #f6f7fb;
-  overflow-x:hidden;
-  overflow-y:hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 /*! ---------------------------------------------------------- variable ------------------------------------------------------------------------------------------------------ */
 
@@ -367,10 +367,12 @@ body {
   .intro .bottom .left {
     display: flex;
     flex-direction: column-reverse;
-    gap: 20px;
   }
   .intro .bottom .left a {
     margin: 0 auto;
+  }
+  .intro .bottom .left > a {
+    margin-bottom: 15px !important;
   }
 }
 /*! -------------------------------------------------------------------- d-m-main-product ------------------------------------------------------------------------------------- */
@@ -576,8 +578,12 @@ main .product .product-content .image {
     margin: 0 5px;
   }
 
+  main .product .product-tab:nth-child(1) {
+    margin-left: 50px !important;
+  }
+
   main .product .product-tab {
-    background: #E5EBF3 !important;
+    background: #e5ebf3 !important;
   }
 
   main .product .product-tab.active {
@@ -1129,6 +1135,9 @@ main .solution-content-item:hover {
     color: #7a90aa;
     margin: 0 5px !important;
   }
+  main .solution-tab-wrapper .solution-tab:nth-child(1) {
+    margin-right: 150px !important;
+  }
   main .solution-tab .text {
     font-weight: 700;
     padding: 5px 10px;
@@ -1519,7 +1528,7 @@ footer > div {
 }
 
 .change-lang-footer .other {
-    margin-right: 12px;
+  margin-right: 12px;
 }
 
 .change-lang-footer .other span {
