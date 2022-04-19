@@ -16,7 +16,7 @@
 ## web development technologies
 * html 
 * css (css pure + flex box + css grid)
-* java script (vanilla js + jquary)
+* java script (javascript + jquary)
 * 
 ---
 ## contact me
