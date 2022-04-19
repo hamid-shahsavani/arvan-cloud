@@ -178,7 +178,7 @@ body {
   background-color: #00baba !important;
 }
 
-@media (max-width: 91000px) {
+@media (max-width: 1000px) {
   .loading-animation {
     display: none !important;
   }
