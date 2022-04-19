@@ -178,7 +178,7 @@ body {
   background-color: #00baba !important;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 91000px) {
   .loading-animation {
     display: none !important;
   }
@@ -688,7 +688,7 @@ main .product .product-content .image {
 /** ------------------------------------------------------ global -------------------------------------------------------- */
 
 main .customer {
-  background: url('../img/main/customer/background.svg') repeat-x;
+  background: url('../img/customer-background.svg') repeat-x;
   position: relative;
   padding: 100px 0;
 }
@@ -758,7 +758,7 @@ main .customer .customer-logo-wrapper:hover {
 
 main .customer .customer-comment {
   background-color: #fff;
-  background: url(../img/main/customer/comment-quote.svg) no-repeat 30px 30px;
+  background: url(../img/customer-comment-quote.svg) no-repeat 30px 30px;
   border-radius: 16px;
   box-shadow: 0 0px 30px 0px #cfdae5;
   border-radius: 12px;
@@ -789,8 +789,9 @@ main .customer .customer-comment .author {
 
 /* customer logo */
 
-main .customer .customer-logo svg {
-  height: 40px;
+main .customer .customer-logo img {
+  height: 50px;
+  width: 170px;
 }
 
 main .customer .customer-logo-section {
@@ -832,7 +833,7 @@ main .customer .customer-logo {
   text-align: center;
 }
 
-.map svg {
+.map img {
   height: auto;
   max-width: 1200px !important;
   overflow: hidden;
@@ -915,6 +916,11 @@ main .customer .customer-logo {
   justify-content: center;
   width: 55px;
   height: 55px;
+}
+
+.map .map-footer .map-item .image img {
+  width: 40px;
+  height: 40px;
 }
 
 .map .map-footer .map-item .text {
@@ -2033,6 +2039,8 @@ footer > div {
 
 .sub-menu .right .right-main .list .icon {
   margin: 12px 0px 0 20px;
+  width: 24px;
+  height: 24px;
 }
 
 .sub-menu .right .right-main .list .title {
@@ -2099,6 +2107,8 @@ footer > div {
 
 .sub-menu .item-1 .left .left-main .icon {
   margin: 8px 0px 0 20px;
+  width: 24px;
+  height: 24px;
 }
 
 .sub-menu .item-1 .left .left-main .content .title {
@@ -2383,8 +2393,10 @@ footer > div {
   transition: background-color 0.5s;
 }
 
-.sub-menu .item-5 .left .content .list svg {
+.sub-menu .item-5 .left .content .list img {
   vertical-align: -5px;
+  width: 22px;
+  height: 22px;
 }
 .sub-menu .item-5 .left .content .list .title {
   color: #253343;
@@ -2433,6 +2445,7 @@ footer > div {
     height: 60px;
     display: flex;
     align-items: center;
+    padding:0 10px 0 10px
   }
 
   .mobile-header .m-top-menu > div {
@@ -2542,7 +2555,7 @@ footer > div {
     color: #093d3f !important;
     display: flex;
     justify-content: space-between;
-    padding: 10px 0;
+    padding: 10px;
     margin: 0 0 0 13px;
   }
 

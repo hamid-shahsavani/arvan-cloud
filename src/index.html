@@ -1,0 +1,2131 @@
+
+<!--* copyright SYS113 / 2022 - april -->
+
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta name="description" content="arvancloud.com/fa front-end !">
+    <meta name="keywords" content="html , pure css , flex-box , css-grid , javascript , jquary">
+    <meta name="author" content="hamid shahsavani">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v32.102/Vazirmatn-font-face.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>arvancloud front-end !</title>
+  </head>
+  <body>
+    <div class="loading-animation">
+      <div class="background"></div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+    <header>
+      <div class="desktop-header">
+        <section class="top-menu">
+          <div class="c-container">
+            <div class="d-top-menu-wrapper">
+              <div class="right">
+                <a href="https://www.arvancloud.com/fa" class="text">برای ورود به صفحه اصلی آروان کلود اینجا کلیک کنید!</a>
+              </div>
+              <div class="left">
+                <div class="menu">
+                  <ul>
+                    <li><a href="#">فرصت های شغلی</a></li>
+                    <li><a href="#">انجمن</a></li>
+                    <li><a href="#">بلاگ</a></li>
+                    <li><a href="#">تماس با ما</a></li>
+                  </ul>
+                </div>
+                <div class="change-lang">
+                  <div class="active-lang-header" id="lang-persian">
+                    <span>فارسی</span>
+                    <img src="assets/img/header-flag-persian.svg" alt="یک متن تستی" />
+                  </div>
+                  <div class="other">
+                    <div id="lang-english">
+                      <span>enlgish</span>
+                      <img src="assets/img/header-flag-english.svg" alt="یک متن تستی" />
+                    </div>
+                    <div id="lang-english">
+                      <span>enlgish</span>
+                      <img src="assets/img/header-flag-english.svg" alt="یک متن تستی" />
+                    </div>
+                    <div id="lang-english">
+                      <span>enlgish</span>
+                      <img src="assets/img/header-flag-english.svg" alt="یک متن تستی" />
+                    </div>
+                    <div id="lang-english">
+                      <span>enlgish</span>
+                      <img src="assets/img/header-flag-english.svg" alt="یک متن تستی" />
+                    </div>
+                    <div id="lang-english">
+                      <span>enlgish</span>
+                      <img src="assets/img/header-flag-english.svg" alt="یک متن تستی" />
+                    </div>
+                    <div id="lang-english">
+                      <span>enlgish</span>
+                      <img src="assets/img/header-flag-english.svg" alt="یک متن تستی" />
+                    </div>
+                    <div id="lang-english">
+                      <span>enlgish</span>
+                      <img src="assets/img/header-flag-english.svg" alt="یک متن تستی" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="main-menu">
+          <div class="c-container">
+            <div class="d-main-menu-wrapper">
+              <div class="right">
+                <a href="#" class="logo">
+                  <img src="assets/img/header-logo.svg" alt="">
+                </a>
+                <ul>
+                  <li class="item-1 main-menu-tab" id="item-1-tab">
+                    <a href="javascript:void(0);">
+                      <span>محصولات</span>
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                  </li>
+                  <li class="item-2 main-menu-tab" id="item-2-tab">
+                    <a href="javascript:void(0);">
+                      <span>راهکار ها</span>
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span>بازارچه ابری</span>
+                    </a>
+                  </li>
+                  <li class="item-4 main-menu-tab" id="item-4-tab">
+                    <a href="javascript:void(0);">
+                      <span>پایگاه دانش</span>
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                  </li>
+                  <li class="item-5 main-menu-tab" id="item-5-tab">
+                    <a href="javascript:void(0);">
+                      <span>قیمت</span>
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="left">
+                <a href="#" class="login"><span>ورود</span></a>
+                <a href="#" class="register"><span>ثبت نام</span></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="sub-menu">
+          <div class="item-1 main-menu-content" id="item-1">
+            <div class="c-container">
+              <div class="d-sub-menu-wrapper">
+                <div class="right">
+                  <div class="right-header">
+                    <span>محصولات ویژه</span>
+                  </div>
+                  <div class="right-main">
+                    <a href="#" class="list">
+                      <img src="assets/img/header-sub-menu-icon.svg" alt="آیکون" class="icon">
+                      <div class="content">
+                        <div class="title">سرور ابری</div>
+                        <div class="description">سرور ابری با قابلیت تنظیم منابع دلخواه</div>
+                      </div>
+                    </a>
+                    <a href="#" class="list">
+                      <img src="assets/img/header-sub-menu-icon.svg" alt="آیکون" class="icon">
+                      <div class="content">
+                        <div class="title">سرور ابری</div>
+                        <div class="description">سرور ابری با قابلیت تنظیم منابع دلخواه</div>
+                      </div>
+                    </a>
+                    <a href="#" class="list">
+                      <img src="assets/img/header-sub-menu-icon.svg" alt="آیکون" class="icon">
+                      <div class="content">
+                        <div class="title">سرور ابری</div>
+                        <div class="description">سرور ابری با قابلیت تنظیم منابع دلخواه</div>
+                      </div>
+                    </a>
+                    <a href="#" class="list">
+                      <img src="assets/img/header-sub-menu-icon.svg" alt="آیکون" class="icon">
+                      <div class="content">
+                        <div class="title">سرور ابری</div>
+                        <div class="description">سرور ابری با قابلیت تنظیم منابع دلخواه</div>
+                      </div>
+                    </a>
+                    <a href="#" class="list">
+                      <img src="assets/img/header-sub-menu-icon.svg" alt="آیکون" class="icon">
+                      <div class="content">
+                        <div class="title">سرور ابری</div>
+                        <div class="description">سرور ابری با قابلیت تنظیم منابع دلخواه</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="left">
+                  <div class="left-header">
+                    <span>دسته بندی بر اساس عملکرد</span>
+                  </div>
+                  <div class="left-main">
+                    <div class="left-content">
+                      <img src="assets/img/header-sub-menu-icon.svg" alt="آیکون" class="icon">
+                      <div class="content">
+                        <div class="title">سرور ابری</div>
+                        <div class="links">
+                          <ul>
+                            <li><a href="#">شبکه توزیع محتوا</a></li>
+                            <li><a href="#">شبکه توزیع محتوا</a></li>
+                            <li><a href="#">شبکه توزیع محتوا</a></li>
+                            <li><a href="#">شبکه توزیع محتوا</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="left-content">
+                      <img src="assets/img/header-sub-menu-icon.svg" alt="آیکون" class="icon">
+                      <div class="content">
+                        <div class="title">سرور ابری</div>
+                        <div class="links">
+                          <ul>
+                            <li><a href="#">شبکه توزیع محتوا</a></li>
+                            <li><a href="#">شبکه توزیع محتوا</a></li>
+                            <li><a href="#">شبکه توزیع محتوا</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="left-content">
+                      <img src="assets/img/header-sub-menu-icon.svg" alt="آیکون" class="icon">
+                      <div class="content">
+                        <div class="title">سرور ابری</div>
+                        <div class="links">
+                          <ul>
+                            <li><a href="#">شبکه توزیع محتوا</a></li>
+                            <li><a href="#">شبکه توزیع محتوا</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="left-content">
+                      <img src="assets/img/header-sub-menu-icon.svg" alt="آیکون" class="icon">
+                      <div class="content">
+                        <div class="title">سرور ابری</div>
+                        <div class="links">
+                          <ul>
+                            <li><a href="#">شبکه توزیع محتوا</a></li>
+                            <li><a href="#">شبکه توزیع محتوا</a></li>
+                            <li><a href="#">شبکه توزیع محتوا</a></li>
+                            <li><a href="#">شبکه توزیع محتوا</a></li>
+                            <li><a href="#">شبکه توزیع محتوا</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="left-content">
+                      <img src="assets/img/header-sub-menu-icon.svg" alt="آیکون" class="icon">
+                      <div class="content">
+                        <div class="title">سرور ابری</div>
+                        <div class="links">
+                          <ul>
+                            <li><a href="#">شبکه توزیع محتوا</a></li>
+                            <li><a href="#">شبکه توزیع محتوا</a></li>
+                            <li><a href="#">شبکه توزیع محتوا</a></li>
+                            <li><a href="#">شبکه توزیع محتوا</a></li>
+                            <li><a href="#">شبکه توزیع محتوا</a></li>
+                            <li><a href="#">شبکه توزیع محتوا</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="left-content">
+                      <img src="assets/img/header-sub-menu-icon.svg" alt="آیکون" class="icon">
+                      <div class="content">
+                        <div class="title">سرور ابری</div>
+                        <div class="links">
+                          <ul>
+                            <li><a href="#">شبکه توزیع محتوا</a></li>
+                            <li><a href="#">شبکه توزیع محتوا</a></li>
+                            <li><a href="#">شبکه توزیع محتوا</a></li>
+                            <li><a href="#">شبکه توزیع محتوا</a></li>
+                            <li><a href="#">شبکه توزیع محتوا</a></li>
+                            <li><a href="#">شبکه توزیع محتوا</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="left-content">
+                      <img src="assets/img/header-sub-menu-icon.svg" alt="آیکون" class="icon">
+                      <div class="content">
+                        <div class="title">سرور ابری</div>
+                        <div class="links">
+                          <ul>
+                            <li><a href="#">شبکه توزیع محتوا</a></li>
+                            <li><a href="#">شبکه توزیع محتوا</a></li>
+                            <li><a href="#">شبکه توزیع محتوا</a></li>
+                            <li><a href="#">شبکه توزیع محتوا</a></li>
+                            <li><a href="#">شبکه توزیع محتوا</a></li>
+                            <li><a href="#">شبکه توزیع محتوا</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="left-content">
+                      <img src="assets/img/header-sub-menu-icon.svg" alt="آیکون" class="icon">
+                      <div class="content">
+                        <div class="title">سرور ابری</div>
+                        <div class="links">
+                          <ul>
+                            <li><a href="#">شبکه توزیع محتوا</a></li>
+                            <li><a href="#">شبکه توزیع محتوا</a></li>
+                            <li><a href="#">شبکه توزیع محتوا</a></li>
+                            <li><a href="#">شبکه توزیع محتوا</a></li>
+                            <li><a href="#">شبکه توزیع محتوا</a></li>
+                            <li><a href="#">شبکه توزیع محتوا</a></li>
+                            <li><a href="#">شبکه توزیع محتوا</a></li>
+                            <li><a href="#">شبکه توزیع محتوا</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="left-content">
+                      <img src="assets/img/header-sub-menu-icon.svg" alt="آیکون" class="icon">
+                      <div class="content">
+                        <div class="title">سرور ابری</div>
+                        <div class="links">
+                          <ul>
+                            <li><a href="#">شبکه توزیع محتوا</a></li>
+                            <li><a href="#">شبکه توزیع محتوا</a></li>
+                            <li><a href="#">شبکه توزیع محتوا</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item-2 main-menu-content" id="item-2">
+            <div class="c-container">
+              <div class="d-main-menu-wrapper">
+                <div class="right">
+                  <div class="right-header">
+                    <span>محصولات ویژه</span>
+                  </div>
+                  <div class="right-main">
+                    <a href="#" class="list">
+                      <img src="assets/img/header-sub-menu-icon.svg" alt="آیکون" class="icon">
+                      <div class="content">
+                        <div class="title">سرور ابری</div>
+                        <div class="description">سرور ابری با قابلیت تنظیم منابع دلخواه</div>
+                      </div>
+                    </a>
+                    <a href="#" class="list">
+                      <img src="assets/img/header-sub-menu-icon.svg" alt="آیکون" class="icon">
+                      <div class="content">
+                        <div class="title">سرور ابری</div>
+                        <div class="description">سرور ابری با قابلیت تنظیم منابع دلخواه</div>
+                      </div>
+                    </a>
+                    <a href="#" class="list">
+                      <img src="assets/img/header-sub-menu-icon.svg" alt="آیکون" class="icon">
+                      <div class="content">
+                        <div class="title">سرور ابری</div>
+                        <div class="description">سرور ابری با قابلیت تنظیم منابع دلخواه</div>
+                      </div>
+                    </a>
+                    <a href="#" class="list">
+                      <img src="assets/img/header-sub-menu-icon.svg" alt="آیکون" class="icon">
+                      <div class="content">
+                        <div class="title">سرور ابری</div>
+                        <div class="description">سرور ابری با قابلیت تنظیم منابع دلخواه</div>
+                      </div>
+                    </a>
+                    <a href="#" class="list">
+                      <img src="assets/img/header-sub-menu-icon.svg" alt="آیکون" class="icon">
+                      <div class="content">
+                        <div class="title">سرور ابری</div>
+                        <div class="description">سرور ابری با قابلیت تنظیم منابع دلخواه</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="left">
+                  <div class="right-content">
+                    <div class="header">
+                      <span>دسته بندی بر اساس عملکرد</span>
+                    </div>
+                    <div class="content">
+                      <a class="list" href="#">
+                        <span class="title">ارز دیجیتال</span>
+                        <p class="description">
+                          راهکاری امن، سریع و کارآمد برای تریدرها و صرافی‌های آنلاین ارزهای
+                          دیجیتال
+                        </p>
+                      </a>
+                      <a class="list" href="#">
+                        <span class="title">ارز دیجیتال</span>
+                        <p class="description">
+                          راهکاری امن، سریع و کارآمد برای تریدرها و صرافی‌های آنلاین ارزهای
+                          دیجیتال
+                        </p>
+                      </a>
+                      <a class="list" href="#">
+                        <span class="title">ارز دیجیتال</span>
+                        <p class="description">
+                          راهکاری امن، سریع و کارآمد برای تریدرها و صرافی‌های آنلاین ارزهای
+                          دیجیتال
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="left-content">
+                    <div class="header">
+                      <span>دسته بندی بر اساس عملکرد</span>
+                    </div>
+                    <div class="content">
+                      <a class="list" href="#">
+                        <span class="title">ارز دیجیتال</span>
+                        <p class="description">
+                          راهکاری امن، سریع و کارآمد برای تریدرها و صرافی‌های آنلاین ارزهای
+                          دیجیتال
+                        </p>
+                      </a>
+                      <a class="list" href="#">
+                        <span class="title">ارز دیجیتال</span>
+                        <p class="description">
+                          راهکاری امن، سریع و کارآمد برای تریدرها و صرافی‌های آنلاین ارزهای
+                          دیجیتال
+                        </p>
+                      </a>
+                      <a class="list" href="#">
+                        <span class="title">ارز دیجیتال</span>
+                        <p class="description">
+                          راهکاری امن، سریع و کارآمد برای تریدرها و صرافی‌های آنلاین ارزهای
+                          دیجیتال
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item-4 main-menu-content" id="item-4">
+            <div class="c-container">
+              <div class="d-main-menu-wrapper">
+                <div class="right">
+                  <div class="right-header">
+                    <span>منابع ویژه</span>
+                  </div>
+                  <div class="right-main">
+                    <a href="#" class="list">
+                      <img src="assets/img/header-sub-menu-icon.svg" alt="آیکون" class="icon">
+                      <div class="content">
+                        <div class="title">سرور ابری</div>
+                        <div class="description">
+                          سرور ابری با قابلیت تنظیم منابع دلخواه
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="list">
+                      <img src="assets/img/header-sub-menu-icon.svg" alt="آیکون" class="icon">
+                      <div class="content">
+                        <div class="title">سرور ابری</div>
+                        <div class="description">
+                          سرور ابری با قابلیت تنظیم منابع دلخواه
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="list">
+                      <img src="assets/img/header-sub-menu-icon.svg" alt="آیکون" class="icon">
+                      <div class="content">
+                        <div class="title">سرور ابری</div>
+                        <div class="description">
+                          سرور ابری با قابلیت تنظیم منابع دلخواه
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="list">
+                      <img src="assets/img/header-sub-menu-icon.svg" alt="آیکون" class="icon">
+                      <div class="content">
+                        <div class="title">سرور ابری</div>
+                        <div class="description">
+                          سرور ابری با قابلیت تنظیم منابع دلخواه
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="list">
+                      <img src="assets/img/header-sub-menu-icon.svg" alt="آیکون" class="icon">
+                      <div class="content">
+                        <div class="title">سرور ابری</div>
+                        <div class="description">
+                          سرور ابری با قابلیت تنظیم منابع دلخواه
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="left">
+                  <div class="right-content">
+                    <div class="header">
+                      <span>دیگر مستندات</span>
+                    </div>
+                    <div class="content">
+                      <a class="list" href="#">
+                        <span class="title">وبینار</span>
+                        <p class="description">وبینار اشنایی با محصولات و ویژگی های انها</p>
+                      </a>
+                      <a class="list" href="#">
+                        <span class="title">وبینار</span>
+                        <p class="description">وبینار اشنایی با محصولات و ویژگی های انها</p>
+                      </a>
+                      <a class="list" href="#">
+                        <span class="title">وبینار</span>
+                        <p class="description">وبینار اشنایی با محصولات و ویژگی های انها</p>
+                      </a>
+                      <a class="list" href="#">
+                        <span class="title">وبینار</span>
+                        <p class="description">وبینار اشنایی با محصولات و ویژگی های انها</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="left-content">
+                    <div class="header">
+                      <span>بیشتر بخوانید</span>
+                    </div>
+                    <div class="content">
+                      <a href="#" class="blog-post">
+                        <div class="image">
+                          <img src="assets/img/header-post.webp" alt="یک متن تستی" />
+                        </div>
+                        <div class="content">
+                          <div class="tag">بلاگ</div>
+                          <div class="title">
+                            شرایط فنی استفاده از خدمات ما
+                          </div>
+                          <div class="button">
+                            <span class="text">بیشتر بخوانید</span>
+                            <span class="icon"
+                              ><i class="fa-solid fa-chevron-left"></i
+                            ></span>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="blog-post">
+                        <div class="image">
+                          <img src="assets/img/header-post.webp" alt="یک متن تستی" />
+                        </div>
+                        <div class="content">
+                          <div class="tag">بلاگ</div>
+                          <div class="title">
+                            شرایط فنی استفاده از خدمات ما
+                          </div>
+                          <div class="button">
+                            <span class="text">بیشتر بخوانید</span>
+                            <span class="icon"
+                              ><i class="fa-solid fa-chevron-left"></i
+                            ></span>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="blog-post">
+                        <div class="image">
+                          <img src="assets/img/header-post.webp" alt="یک متن تستی" />
+                        </div>
+                        <div class="content">
+                          <div class="tag">بلاگ</div>
+                          <div class="title">
+                            شرایط فنی استفاده از خدمات ما
+                          </div>
+                          <div class="button">
+                            <span class="text">بیشتر بخوانید</span>
+                            <span class="icon"
+                              ><i class="fa-solid fa-chevron-left"></i
+                            ></span>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="blog-post">
+                        <div class="image">
+                          <img src="assets/img/header-post.webp" alt="یک متن تستی" />
+                        </div>
+                        <div class="content">
+                          <div class="tag">بلاگ</div>
+                          <div class="title">
+                            شرایط فنی استفاده از خدمات ما
+                          </div>
+                          <div class="button">
+                            <span class="text">بیشتر بخوانید</span>
+                            <span class="icon"
+                              ><i class="fa-solid fa-chevron-left"></i
+                            ></span>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="blog-post">
+                        <div class="image">
+                          <img src="assets/img/header-post.webp" alt="یک متن تستی" />
+                        </div>
+                        <div class="content">
+                          <div class="tag">بلاگ</div>
+                          <div class="title">
+                            شرایط فنی استفاده از خدمات ما
+                          </div>
+                          <div class="button">
+                            <span class="text">بیشتر بخوانید</span>
+                            <span class="icon"
+                              ><i class="fa-solid fa-chevron-left"></i
+                            ></span>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="blog-post">
+                        <div class="image">
+                          <img src="assets/img/header-post.webp" alt="یک متن تستی" />
+                        </div>
+                        <div class="content">
+                          <div class="tag">بلاگ</div>
+                          <div class="title">
+                            شرایط فنی استفاده از خدمات ما
+                          </div>
+                          <div class="button">
+                            <span class="text">بیشتر بخوانید</span>
+                            <span class="icon"
+                              ><i class="fa-solid fa-chevron-left"></i
+                            ></span>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item-5 main-menu-content" id="item-5">
+            <div class="c-container">
+              <div class="d-main-menu-wrapper">
+                <div class="right">
+                  <div class="right-header">
+                    <span>منابع ویژه</span>
+                  </div>
+                  <div class="right-main">
+                    <a href="#" class="list">
+                      <img src="assets/img/header-sub-menu-icon.svg" alt="آیکون" class="icon">
+                      <div class="content">
+                        <div class="title">سرور ابری</div>
+                        <div class="description">
+                          سرور ابری با قابلیت تنظیم منابع دلخواه
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="list">
+                      <img src="assets/img/header-sub-menu-icon.svg" alt="آیکون" class="icon">
+                      <div class="content">
+                        <div class="title">سرور ابری</div>
+                        <div class="description">
+                          سرور ابری با قابلیت تنظیم منابع دلخواه
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="list">
+                      <img src="assets/img/header-sub-menu-icon.svg" alt="آیکون" class="icon">
+                      <div class="content">
+                        <div class="title">سرور ابری</div>
+                        <div class="description">
+                          سرور ابری با قابلیت تنظیم منابع دلخواه
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="list">
+                      <img src="assets/img/header-sub-menu-icon.svg" alt="آیکون" class="icon">
+                      <div class="content">
+                        <div class="title">سرور ابری</div>
+                        <div class="description">
+                          سرور ابری با قابلیت تنظیم منابع دلخواه
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="list">
+                      <img src="assets/img/header-sub-menu-icon.svg" alt="آیکون" class="icon">
+                      <div class="content">
+                        <div class="title">سرور ابری</div>
+                        <div class="description">
+                          سرور ابری با قابلیت تنظیم منابع دلخواه
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="left">
+                  <div class="header">
+                    <span>دیگر مستندات</span>
+                  </div>
+                  <div class="content">
+                    <a href="#" class="list">
+                      <img src="assets/img/header-sub-menu-icon-web.svg" alt="">
+                      <span class="title">شبکه توزیع محتوا (cdn)</span>
+                      <div class="description">
+                        قیمت بسته‌های شبکه‌ توزیع محتوا بر اساس ترافیک و استفاده از امکانات
+                        مختلف محاسبه می‌شود.
+                      </div>
+                    </a>
+                    <a href="#" class="list">
+                      <img src="assets/img/header-sub-menu-icon-web.svg" alt="">
+                      <span class="title">شبکه توزیع محتوا (cdn)</span>
+                      <div class="description">
+                        قیمت بسته‌های شبکه‌ توزیع محتوا بر اساس ترافیک و استفاده از امکانات
+                        مختلف محاسبه می‌شود.
+                      </div>
+                    </a>
+                    <a href="#" class="list">
+                      <img src="assets/img/header-sub-menu-icon-web.svg" alt="">
+                      <span class="title">شبکه توزیع محتوا (cdn)</span>
+                      <div class="description">
+                        قیمت بسته‌های شبکه‌ توزیع محتوا بر اساس ترافیک و استفاده از امکانات
+                        مختلف محاسبه می‌شود.
+                      </div>
+                    </a>
+                    <a href="#" class="list">
+                      <img src="assets/img/header-sub-menu-icon-web.svg" alt="">
+                      <span class="title">شبکه توزیع محتوا (cdn)</span>
+                      <div class="description">
+                        قیمت بسته‌های شبکه‌ توزیع محتوا بر اساس ترافیک و استفاده از امکانات
+                        مختلف محاسبه می‌شود.
+                      </div>
+                    </a>
+                    <a href="#" class="list">
+                      <img src="assets/img/header-sub-menu-icon-web.svg" alt="">
+                      <span class="title">شبکه توزیع محتوا (cdn)</span>
+                      <div class="description">
+                        قیمت بسته‌های شبکه‌ توزیع محتوا بر اساس ترافیک و استفاده از امکانات
+                        مختلف محاسبه می‌شود.
+                      </div>
+                    </a>
+                    <a href="#" class="list">
+                      <img src="assets/img/header-sub-menu-icon-web.svg" alt="">
+                      <span class="title">شبکه توزیع محتوا (cdn)</span>
+                      <div class="description">
+                        قیمت بسته‌های شبکه‌ توزیع محتوا بر اساس ترافیک و استفاده از امکانات
+                        مختلف محاسبه می‌شود.
+                      </div>
+                    </a>
+                    <a href="#" class="list">
+                      <img src="assets/img/header-sub-menu-icon-web.svg" alt="">
+                      <span class="title">شبکه توزیع محتوا (cdn)</span>
+                      <div class="description">
+                        قیمت بسته‌های شبکه‌ توزیع محتوا بر اساس ترافیک و استفاده از امکانات
+                        مختلف محاسبه می‌شود.
+                      </div>
+                    </a>
+                    <a href="#" class="list">
+                      <img src="assets/img/header-sub-menu-icon-web.svg" alt="">
+                      <span class="title">شبکه توزیع محتوا (cdn)</span>
+                      <div class="description">
+                        قیمت بسته‌های شبکه‌ توزیع محتوا بر اساس ترافیک و استفاده از امکانات
+                        مختلف محاسبه می‌شود.
+                      </div>
+                    </a>
+                    <a href="#" class="list">
+                      <img src="assets/img/header-sub-menu-icon-web.svg" alt="">
+                      <span class="title">شبکه توزیع محتوا (cdn)</span>
+                      <div class="description">
+                        قیمت بسته‌های شبکه‌ توزیع محتوا بر اساس ترافیک و استفاده از امکانات
+                        مختلف محاسبه می‌شود.
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-header">
+        <div class="container">
+          <div class="mobile-header-wrapper">
+            <div class="m-top-menu">
+              <div class="mobile-menu-logo">
+                <a href="#" class="logo">
+                  <img src="assets/img/header-logo.svg" alt="">
+                </a>
+              </div>
+              <div class="mobile-menu-button">
+                <div class="btn">
+                  <input id="mobile-menu-icon-1" type="checkbox" />
+                  <label class="mobile-menu-icon-2" for="mobile-menu-icon-1">
+                    <span></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="m-show-menu">
+              <ul class="m-main-menu">
+                <li class="m-main-menu-item">
+                  <a class="m-item-1" href="javascript:void(0);">
+                    <span>محصولات</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </a>
+                  <ul class="m-sub-menu-1 m-sub-menu">
+                    <div class="title">
+                      <span>محصولات ویژه</span>
+                    </div>
+                    <a href="#" class="item item-type-1">
+                      <div class="icon">
+                        <img src="assets/img/header-sub-menu-icon.svg" alt="">
+                      </div>
+                      <div class="text">
+                        <div class="top">سرور ابری</div>
+                        <div class="bottom">سرور ابری با قابلیت تنظیم منابع دلخواه</div>
+                      </div>
+                    </a>
+                    <a href="#" class="item item-type-1">
+                      <div class="icon">
+                        <img src="assets/img/header-sub-menu-icon.svg" alt="">
+                      </div>
+                      <div class="text">
+                        <div class="top">سرور ابری</div>
+                        <div class="bottom">سرور ابری با قابلیت تنظیم منابع دلخواه</div>
+                      </div>
+                    </a>
+                    <a href="#" class="item item-type-1">
+                      <div class="icon">
+                        <img src="assets/img/header-sub-menu-icon.svg" alt="">
+                      </div>
+                      <div class="text">
+                        <div class="top">سرور ابری</div>
+                        <div class="bottom">سرور ابری با قابلیت تنظیم منابع دلخواه</div>
+                      </div>
+                    </a>
+                    <a href="#" class="item item-type-1">
+                      <div class="icon">
+                        <img src="assets/img/header-sub-menu-icon.svg" alt="">
+                      </div>
+                      <div class="text">
+                        <div class="top">سرور ابری</div>
+                        <div class="bottom">سرور ابری با قابلیت تنظیم منابع دلخواه</div>
+                      </div>
+                    </a>
+                    <a href="#" class="item item-type-1">
+                      <div class="icon">
+                        <img src="assets/img/header-sub-menu-icon.svg" alt="">
+                      </div>
+                      <div class="text">
+                        <div class="top">سرور ابری</div>
+                        <div class="bottom">سرور ابری با قابلیت تنظیم منابع دلخواه</div>
+                      </div>
+                    </a>
+                    <div class="title">
+                      <span>محصولات ویژه</span>
+                    </div>
+                    <div class="item-type-2 item">
+                      <div class="icon">
+                        <img src="assets/img/header-sub-menu-icon.svg" alt="">
+                      </div>
+                      <div class="text">
+                        <div class="top">سرور ابری</div>
+                        <ul>
+                          <li><a href="#">شبکه توزیع محتوا</a></li>
+                          <li><a href="#">شبکه توزیع محتوا</a></li>
+                          <li><a href="#">شبکه توزیع محتوا</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="item-type-2 item">
+                      <div class="icon">
+                        <img src="assets/img/header-sub-menu-icon.svg" alt="">
+                      </div>
+                      <div class="text">
+                        <div class="top">سرور ابری</div>
+                        <ul>
+                          <li><a href="#">شبکه توزیع محتوا</a></li>
+                          <li><a href="#">شبکه توزیع محتوا</a></li>
+                          <li><a href="#">شبکه توزیع محتوا</a></li>
+                          <li><a href="#">شبکه توزیع محتوا</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="item-type-2 item">
+                      <div class="icon">
+                        <img src="assets/img/header-sub-menu-icon.svg" alt="">
+                      </div>
+                      <div class="text">
+                        <div class="top">سرور ابری</div>
+                        <ul>
+                          <li><a href="#">شبکه توزیع محتوا</a></li>
+                          <li><a href="#">شبکه توزیع محتوا</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="item-type-2 item">
+                      <div class="icon">
+                        <img src="assets/img/header-sub-menu-icon.svg" alt="">
+                      </div>
+                      <div class="text">
+                        <div class="top">سرور ابری</div>
+                        <ul>
+                          <li><a href="#">شبکه توزیع محتوا</a></li>
+                          <li><a href="#">شبکه توزیع محتوا</a></li>
+                          <li><a href="#">شبکه توزیع محتوا</a></li>
+                          <li><a href="javascript:void(0);" class="disable">شبکه توزیع محتوا</a></li>
+                          <li><a href="#">شبکه توزیع محتوا</a></li>
+                          <li><a href="#">شبکه توزیع محتوا</a></li>
+                          <li><a href="#">شبکه توزیع محتوا</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+                <li class="m-main-menu-item">
+                  <a class="m-item-2" href="javascript:void(0);">
+                    <span>راهکار ها</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </a>
+                  <ul class="m-sub-menu-2 m-sub-menu">
+                    <div class="title">
+                      <span>راهکار های ویژه</span>
+                    </div>
+                    <a href="#" class="item item-type-1">
+                      <div class="icon">
+                        <img src="assets/img/header-sub-menu-icon.svg" alt="">
+                      </div>
+                      <div class="text">
+                        <div class="top">سرور ابری</div>
+                        <div class="bottom">سرور ابری با قابلیت تنظیم منابع دلخواه</div>
+                      </div>
+                    </a>
+                    <a href="#" class="item item-type-1">
+                      <div class="icon">
+                        <img src="assets/img/header-sub-menu-icon.svg" alt="">
+                      </div>
+                      <div class="text">
+                        <div class="top">سرور ابری</div>
+                        <div class="bottom">سرور ابری با قابلیت تنظیم منابع دلخواه</div>
+                      </div>
+                    </a>
+                    <a href="#" class="item item-type-1">
+                      <div class="icon">
+                        <img src="assets/img/header-sub-menu-icon.svg" alt="">
+                      </div>
+                      <div class="text">
+                        <div class="top">سرور ابری</div>
+                        <div class="bottom">سرور ابری با قابلیت تنظیم منابع دلخواه</div>
+                      </div>
+                    </a>
+                    <div class="title">
+                      <span>بر اساس صنعت</span>
+                    </div>
+                    <ul class="item-type-3">
+                      <li>
+                        <a href="#">
+                          <div class="item-title">ارز دیجیتال</div>
+                          <div class="item-description">راهکاری امن، سریع و کارآمد برای تریدرها و صرافی‌های آنلاین ارزهای دیجیتال</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="item-title">ارز دیجیتال</div>
+                          <div class="item-description">راهکاری امن، سریع و کارآمد برای تریدرها و صرافی‌های آنلاین ارزهای دیجیتال</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="item-title">ارز دیجیتال</div>
+                          <div class="item-description">راهکاری امن، سریع و کارآمد برای تریدرها و صرافی‌های آنلاین ارزهای دیجیتال</div>
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="title">
+                      <span>بر اساس صنعت</span>
+                    </div>
+                    <ul class="item-type-3">
+                      <li>
+                        <a href="#">
+                          <div class="item-title">ارز دیجیتال</div>
+                          <div class="item-description">راهکاری امن، سریع و کارآمد برای تریدرها و صرافی‌های آنلاین ارزهای دیجیتال</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="item-title">ارز دیجیتال</div>
+                          <div class="item-description">راهکاری امن، سریع و کارآمد برای تریدرها و صرافی‌های آنلاین ارزهای دیجیتال</div>
+                        </a>
+                      </li>
+                    </ul>
+                  </ul>
+                </li>
+                <li class="m-main-menu-item">
+                  <a class="m-item-3" href="javascript:void(0);">
+                    <span>پایگاه دانش</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </a>
+                  <ul class="m-sub-menu-3 m-sub-menu">
+                    <div class="title">
+                      <span>محصولات ویژه</span>
+                    </div>
+                    <a href="#" class="item item-type-1">
+                      <div class="icon">
+                        <img src="assets/img/header-sub-menu-icon.svg" alt="">
+                      </div>
+                      <div class="text">
+                        <div class="top">سرور ابری</div>
+                        <div class="bottom">سرور ابری با قابلیت تنظیم منابع دلخواه</div>
+                      </div>
+                    </a>
+                    <a href="#" class="item item-type-1">
+                      <div class="icon">
+                        <img src="assets/img/header-sub-menu-icon.svg" alt="">
+                      </div>
+                      <div class="text">
+                        <div class="top">سرور ابری</div>
+                        <div class="bottom">سرور ابری با قابلیت تنظیم منابع دلخواه</div>
+                      </div>
+                    </a>
+                    <a href="#" class="item item-type-1">
+                      <div class="icon">
+                        <img src="assets/img/header-sub-menu-icon.svg" alt="">
+                      </div>
+                      <div class="text">
+                        <div class="top">سرور ابری</div>
+                        <div class="bottom">سرور ابری با قابلیت تنظیم منابع دلخواه</div>
+                      </div>
+                    </a>
+                    <a href="#" class="item item-type-1">
+                      <div class="icon">
+                        <img src="assets/img/header-sub-menu-icon.svg" alt="">
+                      </div>
+                      <div class="text">
+                        <div class="top">سرور ابری</div>
+                        <div class="bottom">سرور ابری با قابلیت تنظیم منابع دلخواه</div>
+                      </div>
+                    </a>
+                    <a href="#" class="item item-type-1">
+                      <div class="icon">
+                        <img src="assets/img/header-sub-menu-icon.svg" alt="">
+                      </div>
+                      <div class="text">
+                        <div class="top">سرور ابری</div>
+                        <div class="bottom">سرور ابری با قابلیت تنظیم منابع دلخواه</div>
+                      </div>
+                    </a>
+                    <a href="#" class="item item-type-1">
+                      <div class="icon">
+                        <img src="assets/img/header-sub-menu-icon.svg" alt="">
+                      </div>
+                      <div class="text">
+                        <div class="top">سرور ابری</div>
+                        <div class="bottom">سرور ابری با قابلیت تنظیم منابع دلخواه</div>
+                      </div>
+                    </a>
+                    <div class="title">
+                      <span>محصولات ویژه</span>
+                    </div>
+                    <ul class="item-type-3">
+                      <li>
+                        <a href="#">
+                          <div class="item-title">ارز دیجیتال</div>
+                          <div class="item-description">راهکاری امن، سریع و کارآمد برای تریدرها و صرافی‌های آنلاین ارزهای دیجیتال</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="item-title">ارز دیجیتال</div>
+                          <div class="item-description">راهکاری امن، سریع و کارآمد برای تریدرها و صرافی‌های آنلاین ارزهای دیجیتال</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="item-title">ارز دیجیتال</div>
+                          <div class="item-description">راهکاری امن، سریع و کارآمد برای تریدرها و صرافی‌های آنلاین ارزهای دیجیتال</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);" class="disable">
+                          <div class="item-title">ارز دیجیتال</div>
+                          <div class="item-description">راهکاری امن، سریع و کارآمد برای تریدرها و صرافی‌های آنلاین ارزهای دیجیتال</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="item-title">ارز دیجیتال</div>
+                          <div class="item-description">راهکاری امن، سریع و کارآمد برای تریدرها و صرافی‌های آنلاین ارزهای دیجیتال</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);" class="disable">
+                          <div class="item-title">ارز دیجیتال</div>
+                          <div class="item-description">راهکاری امن، سریع و کارآمد برای تریدرها و صرافی‌های آنلاین ارزهای دیجیتال</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="item-title">ارز دیجیتال</div>
+                          <div class="item-description">راهکاری امن، سریع و کارآمد برای تریدرها و صرافی‌های آنلاین ارزهای دیجیتال</div>
+                        </a>
+                      </li>
+                    </ul>
+                  </ul>
+                </li>
+                <li class="m-main-menu-item">
+                  <a class="m-item-4" href="javascript:void(0);">
+                    <span>قیمت</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </a>
+                  <ul class="m-sub-menu-4 m-sub-menu">
+                    <div class="title">
+                      <span>محصولات ویژه</span>
+                    </div>
+                    <a href="#" class="item item-type-1">
+                      <div class="icon">
+                        <img src="assets/img/header-sub-menu-icon.svg" alt="">
+                      </div>
+                      <div class="text">
+                        <div class="top">سرور ابری</div>
+                        <div class="bottom">سرور ابری با قابلیت تنظیم منابع دلخواه</div>
+                      </div>
+                    </a>
+                    <a href="#" class="item item-type-1">
+                      <div class="icon">
+                        <img src="assets/img/header-sub-menu-icon.svg" alt="">
+                      </div>
+                      <div class="text">
+                        <div class="top">سرور ابری</div>
+                        <div class="bottom">سرور ابری با قابلیت تنظیم منابع دلخواه</div>
+                      </div>
+                    </a>
+                    <a href="#" class="item item-type-1">
+                      <div class="icon">
+                        <img src="assets/img/header-sub-menu-icon.svg" alt="">
+                      </div>
+                      <div class="text">
+                        <div class="top">سرور ابری</div>
+                        <div class="bottom">سرور ابری با قابلیت تنظیم منابع دلخواه</div>
+                      </div>
+                    </a>
+                    <a href="#" class="item item-type-1">
+                      <div class="icon">
+                        <img src="assets/img/header-sub-menu-icon.svg" alt="">
+                      </div>
+                      <div class="text">
+                        <div class="top">سرور ابری</div>
+                        <div class="bottom">سرور ابری با قابلیت تنظیم منابع دلخواه</div>
+                      </div>
+                    </a>
+                    <div class="title">
+                      <span>محصولات ویژه</span>
+                    </div>
+                    <a href="#" class="item item-type-4">
+                      <div class="icon">
+                        <img src="assets/img/header-sub-menu-icon.svg" alt="">
+                      </div>
+                      <div class="text">شبکه توزیع محتوا (CDN)</div>
+                    </a>
+                    <a href="#" class="item item-type-4">
+                      <div class="icon">
+                        <img src="assets/img/header-sub-menu-icon.svg" alt="">
+                      </div>
+                      <div class="text">شبکه توزیع محتوا (CDN)</div>
+                    </a>
+                    <a href="#" class="item item-type-4">
+                      <div class="icon">
+                        <img src="assets/img/header-sub-menu-icon.svg" alt="">
+                      </div>
+                      <div class="text">شبکه توزیع محتوا (CDN)</div>
+                    </a>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>بازارچه ابری</span>
+                  </a>
+                </li>
+              </ul>
+              <ul class="m-links">
+                <li>
+                  <a href="#">فرصت های شغلی</a>
+                </li>
+                <li>
+                  <a href="#">انجمن</a>
+                </li>
+                <li>
+                  <a href="#">بلاگ</a>
+                </li>
+                <li>
+                  <a href="#">تماس با ما</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);" class="m-change-lang">
+                    <span>فارسی</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </a>
+                  <ul class="m-change-lang-sub">
+                    <li>
+                      <a href="#">
+                        <img src="assets/img/header-change-lang.svg" alt="یک متن تستی" />
+                        <span>english</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="assets/img/header-change-lang.svg" alt="یک متن تستی" />
+                        <span>english</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="assets/img/header-change-lang.svg" alt="یک متن تستی" />
+                        <span>english</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="assets/img/header-change-lang.svg" alt="یک متن تستی" />
+                        <span>english</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <a href="#" class="m-login-button">
+                <span>ورود / ثبت نام</span>
+              </a>
+              <a href="#" class="m-support-button">
+                <img src="assets/img/header-mobile-sub-menu-support.svg" alt="دکمه پشتیبانی" style="width: 24px; height: 24px;">
+                <span>تماس با واحد فروش</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="intro">
+        <div class="c-container">
+          <div class="intro-wrapper">
+            <div class="top">
+              <img src="assets/img/intro-image-desktop.svg" class="intro-image-d" alt="intro image">
+              <img src="assets/img/intro-image-mobile.svg" class="intro-image-m" alt="intro image">
+            </div>
+            <div class="bottom">
+              <div class="right">
+                <div>
+                  <img src="assets/img/intro-image-bottom-right.svg" alt="">
+                </div>
+                <div>
+                  <span>ابرهایی به وسعت جهان</span>
+                  <span>پنجمین رویداد سالانه سوار ابرها</span>
+                </div>
+              </div>
+              <div class="left">
+                <div class="live-date">
+                  <svg width="88" height="25" viewBox="0 0 88 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22 25V0H28.132V19.7363H37V24.9564L22 25Z" fill="white"></path>
+                    <path d="M46 25H40V0H46V25Z" fill="white"></path>
+                    <path d="M54.6272 25L48 0.043568H55.0617L59.0054 17.9708L62.9057 0H70L63.5358 24.9564L54.6272 25Z" fill="white"></path>
+                    <path d="M88 0V5.25743H78.24V9.62043H86.3573V14.8779H78.24V19.7753H88V25H72V0H88Z" fill="white"></path>
+                    <path d="M6 20C9.31371 20 12 17.3137 12 14C12 10.6863 9.31371 8 6 8C2.68629 8 0 10.6863 0 14C0 17.3137 2.68629 20 6 20Z" fill="#DE0024" class="while-dot"></path>
+                  </svg>
+                  <span>۲۸ فروردین ۱۴۰۱ - ساعت ۱۷:۳۰</span>
+                </div>
+                <a href="#">ثبت نام در رویداد</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="product">
+        <div class="c-container">
+          <div class="product-wrapper">
+            <div class="title">محصولات ابری آروان</div>
+            <div class="sub-title">پوشش کامل نیازهای شما برای راه‌اندازی کسب‌وکاری آنلاین</div>
+            <div class="product-tab-wrapper">
+              <div class="product-tab" id="product-tab-1">
+                <div class="icon">
+                  <img src="assets/img/product-tab-icon-1.svg" alt="">
+                </div>
+                <div class="text">فضای ابری</div>
+              </div>
+              <div class="product-tab" id="product-tab-2">
+                <div class="icon">
+                  <img src="assets/img/product-tab-icon-2.svg" alt="">
+                </div>
+                <div class="text">فضای ابری</div>
+              </div>
+              <div class="product-tab active" id="product-tab-3">
+                <div class="icon">
+                  <img src="assets/img/product-tab-icon-1.svg" alt="">
+                </div>
+                <div class="text">فضای ابری</div>
+              </div>
+              <div class="product-tab" id="product-tab-4">
+                <div class="icon">
+                  <img src="assets/img/product-tab-icon-2.svg" alt="">
+                </div>
+                <div class="text">فضای ابری</div>
+              </div>
+              <div class="product-tab" id="product-tab-5">
+                <div class="icon">
+                  <img src="assets/img/product-tab-icon-1.svg" alt="">
+                </div>
+                <div class="text">فضای ابری</div>
+              </div>
+            </div>
+            <div class="product-content-wrapper">
+              <div class="product-content active" id="product-content-1">
+                <div class="content">
+                  <div class="title">شبکه توزیع محتوا</div>
+                  <div class="description">شبکه توزیع محتوای ابر آروان شبکه ‌ای امن و گسترده برای تحویل محتوای وب‌سایت شماست تا به کمک آن برای کاربران‌تان در سراسر جهان در دسترس باشید. با راه‌اندازی سریع، پایداری بالا و امکانات کامل این محصول مانند DNS و امنیت ابری، دیگر دغدغه‌ی تامین منابع زیرساختی و امنیت سرویس خود را نخواهید داشت.</div>
+                  <a href="#" class="button">
+                    <span>بیشتر بدانید</span>
+                    <i class="fa-solid fa-arrow-left-long"></i>
+                  </a>
+                </div>
+                <div class="image">
+                  <img src="assets/img/product-1.svg" alt="شبکه توزیع محتوا">
+                </div>
+              </div>
+              <div class="product-content" id="product-content-2">
+                <div class="content">
+                  <div class="title">سرور ابری</div>
+                  <div class="description">شبکه توزیع محتوای ابر آروان شبکه ‌ای امن و گسترده برای تحویل محتوای وب‌سایت شماست تا به کمک آن برای کاربران‌تان در سراسر جهان در دسترس باشید. با راه‌اندازی سریع، پایداری بالا و امکانات کامل این محصول مانند DNS و امنیت ابری، دیگر دغدغه‌ی تامین منابع زیرساختی و امنیت سرویس خود را نخواهید داشت.</div>
+                  <a href="#" class="button">
+                    <span>بیشتر بدانید</span>
+                    <i class="fa-solid fa-arrow-left-long"></i>
+                  </a>
+                </div>
+                <div class="image">
+                  <img src="assets/img/product-2.svg" alt="شبکه توزیع محتوا">
+                </div>
+              </div>
+              <div class="product-content" id="product-content-3">
+                <div class="content">
+                  <div class="title">فضای ابری</div>
+                  <div class="description">شبکه توزیع محتوای ابر آروان شبکه ‌ای امن و گسترده برای تحویل محتوای وب‌سایت شماست تا به کمک آن برای کاربران‌تان در سراسر جهان در دسترس باشید. با راه‌اندازی سریع، پایداری بالا و امکانات کامل این محصول مانند DNS و امنیت ابری، دیگر دغدغه‌ی تامین منابع زیرساختی و امنیت سرویس خود را نخواهید داشت.</div>
+                  <a href="#" class="button">
+                    <span>بیشتر بدانید</span>
+                    <i class="fa-solid fa-arrow-left-long"></i>
+                  </a>
+                </div>
+                <div class="image">
+                  <img src="assets/img/product-3.svg" alt="شبکه توزیع محتوا">
+                </div>
+              </div>
+              <div class="product-content" id="product-content-4">
+                <div class="content">
+                  <div class="title">پلتفرم ویدیو</div>
+                  <div class="description">شبکه توزیع محتوای ابر آروان شبکه ‌ای امن و گسترده برای تحویل محتوای وب‌سایت شماست تا به کمک آن برای کاربران‌تان در سراسر جهان در دسترس باشید. با راه‌اندازی سریع، پایداری بالا و امکانات کامل این محصول مانند DNS و امنیت ابری، دیگر دغدغه‌ی تامین منابع زیرساختی و امنیت سرویس خود را نخواهید داشت.</div>
+                  <a href="#" class="button">
+                    <span>بیشتر بدانید</span>
+                    <i class="fa-solid fa-arrow-left-long"></i>
+                  </a>
+                </div>
+                <div class="image">
+                  <img src="assets/img/product-4.svg" alt="شبکه توزیع محتوا">
+                </div>
+              </div>
+              <div class="product-content" id="product-content-5">
+                <div class="content">
+                  <div class="title">کانتینر ابری</div>
+                  <div class="description">شبکه توزیع محتوای ابر آروان شبکه ‌ای امن و گسترده برای تحویل محتوای وب‌سایت شماست تا به کمک آن برای کاربران‌تان در سراسر جهان در دسترس باشید. با راه‌اندازی سریع، پایداری بالا و امکانات کامل این محصول مانند DNS و امنیت ابری، دیگر دغدغه‌ی تامین منابع زیرساختی و امنیت سرویس خود را نخواهید داشت.</div>
+                  <a href="#" class="button">
+                    <span>بیشتر بدانید</span>
+                    <i class="fa-solid fa-arrow-left-long"></i>
+                  </a>
+                </div>
+                <div class="image">
+                  <img src="assets/img/product-5.svg" alt="شبکه توزیع محتوا">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="customer">
+        <div class="c-container">
+          <div class="title">ابرآروان از نگاه مشتریان</div>
+          <div class="sub-title-1">کسب و کار هایی که به ما اعتماد کرده اند</div>
+          <div class="sub-title-2">بیش از ۸۰ هزار مشتری تا کنون از محصولات ابر آروان استفاده کرده‌اند.</div>
+        </div>
+        <section class="customer-comment-section">
+          <div class="customer-comment-wrapper">
+            <div class="customer-comment">
+              <div class="logo">
+                <img src="assets/img/customer-comment-snapp.svg" alt=اسنپ">
+              </div>
+              <div class="comment">
+                <p>
+                  تمام خدمات تیم نقشه‌ی اسنپ که نیازمند CDN‌ یا DNS است، از محصولات ابر آروان استفاده می‌کنند. روزانه میلیون‌ها کاربر تاکسی  اسنپ، اسنپ فود، اسنپ مارکت، اسنپ باکس و اسنپ‌تریپ از نقشه‌ی اسنپ استفاده می‌کنند. با Load Balancer  آروان، حدود ۹۹.۵ درصد ترافیک نقشه‌ی اسنپ صرفه‌جویی می‌شود.
+                </p>
+              </div>
+              <div class="author">
+                <span>
+                  علی کرمی؛ مدیر فنی نقشه اسنپ
+              </span>
+              </div>
+            </div>
+            <div class="customer-comment">
+              <div class="logo">
+                <img src="assets/img/customer-comment-snapp.svg" alt=اسنپ">
+              </div>
+              <div class="comment">
+                <p>
+                  تمام خدمات تیم نقشه‌ی اسنپ که نیازمند CDN‌ یا DNS است، از محصولات ابر آروان استفاده می‌کنند. روزانه میلیون‌ها کاربر تاکسی  اسنپ، اسنپ فود، اسنپ مارکت، اسنپ باکس و اسنپ‌تریپ از نقشه‌ی اسنپ استفاده می‌کنند. با Load Balancer  آروان، حدود ۹۹.۵ درصد ترافیک نقشه‌ی اسنپ صرفه‌جویی می‌شود.
+                </p>
+              </div>
+              <div class="author">
+                <span>
+                  علی کرمی؛ مدیر فنی نقشه اسنپ
+              </span>
+              </div>
+            </div>
+            <div class="customer-comment">
+              <div class="logo">
+                <img src="assets/img/customer-comment-snapp.svg" alt=اسنپ">
+              </div>
+              <div class="comment">
+                <p>
+                  تمام خدمات تیم نقشه‌ی اسنپ که نیازمند CDN‌ یا DNS است، از محصولات ابر آروان استفاده می‌کنند. روزانه میلیون‌ها کاربر تاکسی  اسنپ، اسنپ فود، اسنپ مارکت، اسنپ باکس و اسنپ‌تریپ از نقشه‌ی اسنپ استفاده می‌کنند. با Load Balancer  آروان، حدود ۹۹.۵ درصد ترافیک نقشه‌ی اسنپ صرفه‌جویی می‌شود.
+                </p>
+              </div>
+              <div class="author">
+                <span>
+                  علی کرمی؛ مدیر فنی نقشه اسنپ
+              </span>
+              </div>
+            </div>
+            <div class="customer-comment">
+              <div class="logo">
+                <img src="assets/img/customer-comment-snapp.svg" alt=اسنپ">
+              </div>
+              <div class="comment">
+                <p>
+                  تمام خدمات تیم نقشه‌ی اسنپ که نیازمند CDN‌ یا DNS است، از محصولات ابر آروان استفاده می‌کنند. روزانه میلیون‌ها کاربر تاکسی  اسنپ، اسنپ فود، اسنپ مارکت، اسنپ باکس و اسنپ‌تریپ از نقشه‌ی اسنپ استفاده می‌کنند. با Load Balancer  آروان، حدود ۹۹.۵ درصد ترافیک نقشه‌ی اسنپ صرفه‌جویی می‌شود.
+                </p>
+              </div>
+              <div class="author">
+                <span>
+                  علی کرمی؛ مدیر فنی نقشه اسنپ
+              </span>
+              </div>
+            </div>
+            <div class="customer-comment">
+              <div class="logo">
+                <img src="assets/img/customer-comment-snapp.svg" alt=اسنپ">
+              </div>
+              <div class="comment">
+                <p>
+                  تمام خدمات تیم نقشه‌ی اسنپ که نیازمند CDN‌ یا DNS است، از محصولات ابر آروان استفاده می‌کنند. روزانه میلیون‌ها کاربر تاکسی  اسنپ، اسنپ فود، اسنپ مارکت، اسنپ باکس و اسنپ‌تریپ از نقشه‌ی اسنپ استفاده می‌کنند. با Load Balancer  آروان، حدود ۹۹.۵ درصد ترافیک نقشه‌ی اسنپ صرفه‌جویی می‌شود.
+                </p>
+              </div>
+              <div class="author">
+                <span>
+                  علی کرمی؛ مدیر فنی نقشه اسنپ
+              </span>
+              </div>
+            </div>
+            <div class="customer-comment">
+              <div class="logo">
+                <img src="assets/img/customer-comment-snapp.svg" alt=اسنپ">
+              </div>
+              <div class="comment">
+                <p>
+                  تمام خدمات تیم نقشه‌ی اسنپ که نیازمند CDN‌ یا DNS است، از محصولات ابر آروان استفاده می‌کنند. روزانه میلیون‌ها کاربر تاکسی  اسنپ، اسنپ فود، اسنپ مارکت، اسنپ باکس و اسنپ‌تریپ از نقشه‌ی اسنپ استفاده می‌کنند. با Load Balancer  آروان، حدود ۹۹.۵ درصد ترافیک نقشه‌ی اسنپ صرفه‌جویی می‌شود.
+                </p>
+              </div>
+              <div class="author">
+                <span>
+                  علی کرمی؛ مدیر فنی نقشه اسنپ
+              </span>
+              </div>
+            </div>
+            <div class="customer-comment">
+              <div class="logo">
+                <img src="assets/img/customer-comment-snapp.svg" alt=اسنپ">
+              </div>
+              <div class="comment">
+                <p>
+                  تمام خدمات تیم نقشه‌ی اسنپ که نیازمند CDN‌ یا DNS است، از محصولات ابر آروان استفاده می‌کنند. روزانه میلیون‌ها کاربر تاکسی  اسنپ، اسنپ فود، اسنپ مارکت، اسنپ باکس و اسنپ‌تریپ از نقشه‌ی اسنپ استفاده می‌کنند. با Load Balancer  آروان، حدود ۹۹.۵ درصد ترافیک نقشه‌ی اسنپ صرفه‌جویی می‌شود.
+                </p>
+              </div>
+              <div class="author">
+                <span>
+                  علی کرمی؛ مدیر فنی نقشه اسنپ
+              </span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="customer-logo-section">
+          <div class="customer-logo-wrapper">
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+            <div class="customer-logo">
+              <img src="assets/img/customer-logo-digikala.svg" alt="">
+            </div>
+          </div>
+        </section>
+        </div>
+      </section>
+      <section class="map">
+        <div class="c-container">
+          <div class="map-header">
+            <div class="left">
+              <div class="title">شبکه ابر آروان</div>
+              <div class="sub-title">گستره ای به وسعت جهان</div>
+            </div>
+            <div class="right">
+              <span class="text">
+                ابر آروان با شبکه‌ی گسترده‌ای از پاپ‌سایت‌ها و دیتاسنترها در نقاط مهم ایران و جهان پایداری و دسترسی‌پذیری منحصر به فردی را در اختیارتان قرار می‌دهد. هر روز ترافیک میلیون‌ها کاربر از سرورهای لبه‌ی ابر آروان عبور می‌کند و بیش از ۸۰ هزار کسب‌وکار تا کنون به ابر آروان اعتماد کرده‌اند.
+              </span>
+            </div>
+          </div>
+          <div class="map-wrapper">
+            <!--! for d-map -->
+            <img src="assets/img/map-image.svg" alt="">
+          </div>
+          <div class="map-footer">
+            <div class="map-item">
+              <div class="image">
+                <img src="assets/img/map-item-1.svg" alt="">
+              </div>
+              <div class="text">
+                <div class="top">۹۹.۹۹</div>
+                <div class="bottom">آپ تایم</div>
+              </div>
+            </div>
+            <div class="map-item">
+              <div class="image">
+                <img src="assets/img/map-item-2.svg" alt="">
+              </div>
+              <div class="text">
+                <div class="top">۹۹.۹۹</div>
+                <div class="bottom">آپ تایم</div>
+              </div>
+            </div>
+            <div class="map-item">
+              <div class="image">
+                <img src="assets/img/map-item-1.svg" alt="">
+              </div>
+              <div class="text">
+                <div class="top">۹۹.۹۹</div>
+                <div class="bottom">آپ تایم</div>
+              </div>
+            </div>
+            <div class="map-item">
+              <div class="image">
+                <img src="assets/img/map-item-2.svg" alt="">
+              </div>
+              <div class="text">
+                <div class="top">۹۹.۹۹</div>
+                <div class="bottom">آپ تایم</div>
+              </div>
+            </div>
+            <div class="map-item">
+              <div class="image">
+                <img src="assets/img/map-item-1.svg" alt="">
+              </div>
+              <div class="text">
+                <div class="top">۹۹.۹۹</div>
+                <div class="bottom">آپ تایم</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="solution">
+        <div class="c-container">
+          <div class="solution-wrapper">
+            <div class="title">راهکارهای ابری آروان</div>
+            <div class="sub-title">راه‌حل‌هایی برای یک معماری امن و پایدار</div>
+            <div class="description">شما می‌توانید متناسب با صنعت و اندازه شرکت خود یکی از راهکارهای ابری آروان را به کار گیرید. کار با محصولات ابر آروان آسان است؛ ولی اگر در زمینه‌ی راه‌اندازی هر یک از سرویس‌های ما به راهنمایی نیاز داشتید، می‌توانید با متخصصان ابری آروان تماس بگیرید تا کوچی امن، سریع و آسان را تجربه کنید.</div>
+            <div class="solution-tab-wrapper">
+              <div class="solution-tab" id="solution-tab-1">
+                <div class="text">بر اساس صنعت</div>
+              </div>
+              <div class="solution-tab active" id="solution-tab-2">
+                <div class="text">بر اساس اندازه شرکت</div>
+              </div>
+              <div class="solution-tab" id="solution-tab-3">
+                <div class="text">راهکار های ویژه</div>
+              </div>
+            </div>
+            <div class="product-content-wrapper">
+              <a href="#" class="solution-content active" id="solution-content-1">
+                <div class="solution-content-item">
+                  <div class="content-image">
+                    <img src="assets/img/solution-image.svg" alt="">
+                  </div>
+                  <div class="content-title">ارز دیجیتال</div>
+                  <div class="content-sub-title">راهکاری امن، سریع و کارآمد برای تریدرها و صرافی‌های آنلاین ارزهای دیجیتال</div>
+                </div>
+                <div class="solution-content-item">
+                  <div class="content-image">
+                    <img src="assets/img/solution-image.svg" alt="">
+                  </div>
+                  <div class="content-title">ارز دیجیتال</div>
+                  <div class="content-sub-title">راهکاری امن، سریع و کارآمد برای تریدرها و صرافی‌های آنلاین ارزهای دیجیتال</div>
+                </div>
+                <div class="solution-content-item">
+                  <div class="content-image">
+                    <img src="assets/img/solution-image.svg" alt="">
+                  </div>
+                  <div class="content-title">ارز دیجیتال</div>
+                  <div class="content-sub-title">راهکاری امن، سریع و کارآمد برای تریدرها و صرافی‌های آنلاین ارزهای دیجیتال</div>
+                </div>
+              </a>
+              <a href="#" class="solution-content" id="solution-content-2">
+                <div class="solution-content-item">
+                  <div class="content-image">
+                    <img src="assets/img/solution-image.svg" alt="">
+                  </div>
+                  <div class="content-title">ارز دیجیتال</div>
+                  <div class="content-sub-title">راهکاری امن، سریع و کارآمد برای تریدرها و صرافی‌های آنلاین ارزهای دیجیتال</div>
+                </div>
+                <div class="solution-content-item">
+                  <div class="content-image">
+                    <img src="assets/img/solution-image.svg" alt="">
+                  </div>
+                  <div class="content-title">ارز دیجیتال</div>
+                  <div class="content-sub-title">راهکاری امن، سریع و کارآمد برای تریدرها و صرافی‌های آنلاین ارزهای دیجیتال</div>
+                </div>
+              </a>
+              <a href="#" class="solution-content" id="solution-content-3">
+                <div class="solution-content-item">
+                  <div class="content-image">
+                    <img src="assets/img/solution-image.svg" alt="">
+                  </div>
+                  <div class="content-title">ارز دیجیتال</div>
+                  <div class="content-sub-title">راهکاری امن، سریع و کارآمد برای تریدرها و صرافی‌های آنلاین ارزهای دیجیتال</div>
+                </div>
+                <div class="solution-content-item">
+                  <div class="content-image">
+                    <img src="assets/img/solution-image.svg" alt="">
+                  </div>
+                  <div class="content-title">ارز دیجیتال</div>
+                  <div class="content-sub-title">راهکاری امن، سریع و کارآمد برای تریدرها و صرافی‌های آنلاین ارزهای دیجیتال</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="banner">
+        <div class="c-container">
+          <div class="banner-wrapper">
+            <div class="text">
+              <div class="title">زیرساخت یکپارچه ابر آروان</div>
+              <div class="sub-title">به راحتی و تنها با چند کلیک وب‌سایت، اپلیکیشن یا کسب‌وکار خود را ایمن، سریع و در دسترس کنید.</div>
+              <div class="buttons">
+                <a href="#" class="start">شروع کنید</a>
+                <a href="#" class="call">تماس با فروش</a>
+              </div>
+            </div>
+            <div class="image">
+              <img src="assets/img/banner-image-desktop.svg" alt="یک متن تستی">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="access">
+        <div class="c-container">
+          <div class="title">دسترسی های مفید</div>
+          <div class="sub-title">هر آن‌چه می‌خواهید درباره ابر آروان بدانید</div>
+          <div class="access-wrapper">
+            <a href="#" class="access-content-item">
+              <div class="content-image">
+                <img src="assets/img/solution-image.svg" alt="">
+              </div>
+              <div class="content-title">ارز دیجیتال</div>
+              <div class="content-sub-title">جایی برای اخبار، یادداشت‌ها و گزارش‌های فنی</div>
+            </a>
+            <a href="#" class="access-content-item">
+              <div class="content-image">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="24" cy="24" r="18.5" stroke="#394460" stroke-width="3"></circle>
+                  <path d="M27 12V15" stroke="#AAB8C9" stroke-width="3" stroke-linecap="round"></path>
+                  <path d="M27 33V36" stroke="#AAB8C9" stroke-width="3" stroke-linecap="round"></path>
+                  <path d="M16 16H28C30.2091 16 32 17.7909 32 20V20C32 22.2091 30.2091 24 28 24H20" stroke="#00BABA" stroke-width="3" stroke-linecap="round"></path>
+                  <path d="M21 24H28C30.2091 24 32 25.7909 32 28V28C32 30.2091 30.2091 32 28 32H16" stroke="#00BABA" stroke-width="3" stroke-linecap="round"></path>
+                  <path d="M20 12V36" stroke="#00BABA" stroke-width="3" stroke-linecap="round"></path>
+                </svg>
+              </div>
+              <div class="content-title">ارز دیجیتال</div>
+              <div class="content-sub-title">جایی برای اخبار، یادداشت‌ها و گزارش‌های فنی</div>
+            </a>
+            <a href="#" class="access-content-item">
+              <div class="content-image">
+                <img src="assets/img/solution-image.svg" alt="">
+              </div>
+              <div class="content-title">ارز دیجیتال</div>
+              <div class="content-sub-title">جایی برای اخبار، یادداشت‌ها و گزارش‌های فنی</div>
+            </a>
+            <a href="#" class="access-content-item">
+              <div class="content-image">
+                <img src="assets/img/solution-image.svg" alt="">
+              </div>
+              <div class="content-title">ارز دیجیتال</div>
+              <div class="content-sub-title">جایی برای اخبار، یادداشت‌ها و گزارش‌های فنی</div>
+            </a>
+            <a href="#" class="access-content-item">
+              <div class="content-image">
+                <img src="assets/img/solution-image.svg" alt="">
+              </div>
+              <div class="content-title">ارز دیجیتال</div>
+              <div class="content-sub-title">جایی برای اخبار، یادداشت‌ها و گزارش‌های فنی</div>
+            </a>
+            <a href="#" class="access-content-item">
+              <div class="content-image">
+                <img src="assets/img/solution-image.svg" alt="">
+              </div>
+              <div class="content-title">ارز دیجیتال</div>
+              <div class="content-sub-title">جایی برای اخبار، یادداشت‌ها و گزارش‌های فنی</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="top-footer">
+        <div class="c-container">
+          <div class="top-footer-wrapper">
+            <div class="item">
+              <div class="title">محصولات</div>
+              <ul class="list">
+                <li><a href="#">شبکه توزیع محتوا</a></li>
+                <li><a href="#">شبکه توزیع محتوا</a></li>
+                <li><a href="#">شبکه توزیع محتوا</a></li>
+                <li><a href="#">شبکه توزیع محتوا</a></li>
+                <li><a href="#">شبکه توزیع محتوا</a></li>
+                <li><a href="#">شبکه توزیع محتوا</a></li>
+                <li><a href="#">شبکه توزیع محتوا</a></li>
+              </ul>
+            </div>
+            <div class="item">
+              <div class="title">محصولات</div>
+              <ul class="list">
+                <li><a href="#">شبکه توزیع محتوا <span>در حال جذب</span></a></li>
+                <li><a href="#">شبکه توزیع محتوا</a></li>
+                <li><a href="#">شبکه توزیع محتوا</a></li>
+                <li><a href="#">شبکه توزیع محتوا</a></li>
+                <li><a href="#">شبکه توزیع محتوا</a></li>
+                <li><a href="#">شبکه توزیع محتوا</a></li>
+                <li><a href="#">شبکه توزیع محتوا</a></li>
+                <li><a href="#">شبکه توزیع محتوا</a></li>
+              </ul>
+            </div>
+            <div class="item">
+              <div class="title">محصولات</div>
+              <ul class="list">
+                <li><a href="#">شبکه توزیع محتوا</a></li>
+                <li><a href="#">شبکه توزیع محتوا</a></li>
+                <li><a href="#">شبکه توزیع محتوا</a></li>
+                <li><a href="#">شبکه توزیع محتوا</a></li>
+                <li><a href="#">شبکه توزیع محتوا</a></li>
+                <li><a href="#">شبکه توزیع محتوا</a></li>
+              </ul>
+            </div>
+            <div class="item">
+              <div class="title">محصولات</div>
+              <ul class="list">
+                <li><a href="#">شبکه توزیع محتوا</a></li>
+                <li><a href="#">شبکه توزیع محتوا</a></li>
+                <li><a href="#">شبکه توزیع محتوا</a></li>
+                <li><a href="#">شبکه توزیع محتوا</a></li>
+                <li><a href="#">شبکه توزیع محتوا</a></li>
+              </ul>
+            </div>
+            <div class="item">
+              <div class="title">محصولات</div>
+              <ul class="list">
+                <li><a href="#">شبکه توزیع محتوا</a></li>
+                <li><a href="#">شبکه توزیع محتوا</a></li>
+                <li><a href="#">شبکه توزیع محتوا</a></li>
+                <li><a href="#">شبکه توزیع محتوا</a></li>
+                <li><a href="#">شبکه توزیع محتوا</a></li>
+                <li><a href="#">شبکه توزیع محتوا</a></li>
+                <li><a href="#">شبکه توزیع محتوا</a></li>
+                <li><a href="#">شبکه توزیع محتوا</a></li>
+              </ul>
+            </div>
+            <div class="item">
+              <div class="title">محصولات</div>
+              <ul class="list">
+                <li><a href="#">شبکه توزیع محتوا</a></li>
+                <li><a href="#">شبکه توزیع محتوا</a></li>
+                <li><a href="#">شبکه توزیع محتوا</a></li>
+                <li><a href="#">شبکه توزیع محتوا</a></li>
+                <li><a href="#">شبکه توزیع محتوا</a></li>
+                <li><a href="#">شبکه توزیع محتوا</a></li>
+                <li><a href="#">شبکه توزیع محتوا</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-footer">
+        <div class="c-container">
+          <div class="bottom-footer-wrapper">
+            <div class="top">
+              <div class="right">
+                <ul>
+                  <li><a href="#">انجمن</a></li>
+                  <li><a href="#">انجمن</a></li>
+                  <li><a href="#">انجمن</a></li>
+                </ul>
+                <div class="change-lang change-lang-footer">
+                  <div class="active-lang-footer" id="lang-persian">
+                    <span>فارسی</span>
+                    <img src="assets/img/header-flag-persian.svg" alt="یک متن تستی" />
+                  </div>
+                  <div class="other">
+                    <div id="lang-english">
+                      <span>enlgish</span>
+                      <img src="assets/img/header-flag-english.svg" alt="یک متن تستی" />
+                    </div>
+                    <div id="lang-english">
+                      <span>enlgish</span>
+                      <img src="assets/img/header-flag-english.svg" alt="یک متن تستی" />
+                    </div>
+                    <div id="lang-english">
+                      <span>enlgish</span>
+                      <img src="assets/img/header-flag-english.svg" alt="یک متن تستی" />
+                    </div>
+                    <div id="lang-english">
+                      <span>enlgish</span>
+                      <img src="assets/img/header-flag-english.svg" alt="یک متن تستی" />
+                    </div>
+                    <div id="lang-english">
+                      <span>enlgish</span>
+                      <img src="assets/img/header-flag-english.svg" alt="یک متن تستی" />
+                    </div>
+                    <div id="lang-english">
+                      <span>enlgish</span>
+                      <img src="assets/img/header-flag-english.svg" alt="یک متن تستی" />
+                    </div>
+                    <div id="lang-english">
+                      <span>enlgish</span>
+                      <img src="assets/img/header-flag-english.svg" alt="یک متن تستی" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="left">
+                <a href="#" class="social">
+                  <svg viewBox="328 355 335 276" xmlns="http://www.w3.org/2000/svg">
+                    <path d="
+                      M 630, 425
+                      A 195, 195 0 0 1 331, 600
+                      A 142, 142 0 0 0 428, 570
+                      A  70,  70 0 0 1 370, 523
+                      A  70,  70 0 0 0 401, 521
+                      A  70,  70 0 0 1 344, 455
+                      A  70,  70 0 0 0 372, 460
+                      A  70,  70 0 0 1 354, 370
+                      A 195, 195 0 0 0 495, 442
+                      A  67,  67 0 0 1 611, 380
+                      A 117, 117 0 0 0 654, 363
+                      A  65,  65 0 0 1 623, 401
+                      A 117, 117 0 0 0 662, 390
+                      A  65,  65 0 0 1 630, 425
+                      Z"/>
+                  </svg>
+                </a>
+                <a href="#" class="social">
+                  <svg viewBox="328 355 335 276" xmlns="http://www.w3.org/2000/svg">
+                    <path d="
+                      M 630, 425
+                      A 195, 195 0 0 1 331, 600
+                      A 142, 142 0 0 0 428, 570
+                      A  70,  70 0 0 1 370, 523
+                      A  70,  70 0 0 0 401, 521
+                      A  70,  70 0 0 1 344, 455
+                      A  70,  70 0 0 0 372, 460
+                      A  70,  70 0 0 1 354, 370
+                      A 195, 195 0 0 0 495, 442
+                      A  67,  67 0 0 1 611, 380
+                      A 117, 117 0 0 0 654, 363
+                      A  65,  65 0 0 1 623, 401
+                      A 117, 117 0 0 0 662, 390
+                      A  65,  65 0 0 1 630, 425
+                      Z"/>
+                  </svg>
+                </a>
+                <a href="#" class="social">
+                  <svg viewBox="328 355 335 276" xmlns="http://www.w3.org/2000/svg">
+                    <path d="
+                      M 630, 425
+                      A 195, 195 0 0 1 331, 600
+                      A 142, 142 0 0 0 428, 570
+                      A  70,  70 0 0 1 370, 523
+                      A  70,  70 0 0 0 401, 521
+                      A  70,  70 0 0 1 344, 455
+                      A  70,  70 0 0 0 372, 460
+                      A  70,  70 0 0 1 354, 370
+                      A 195, 195 0 0 0 495, 442
+                      A  67,  67 0 0 1 611, 380
+                      A 117, 117 0 0 0 654, 363
+                      A  65,  65 0 0 1 623, 401
+                      A 117, 117 0 0 0 662, 390
+                      A  65,  65 0 0 1 630, 425
+                      Z"/>
+                  </svg>
+                </a>
+                <a href="#" class="social">
+                  <svg viewBox="328 355 335 276" xmlns="http://www.w3.org/2000/svg">
+                    <path d="
+                      M 630, 425
+                      A 195, 195 0 0 1 331, 600
+                      A 142, 142 0 0 0 428, 570
+                      A  70,  70 0 0 1 370, 523
+                      A  70,  70 0 0 0 401, 521
+                      A  70,  70 0 0 1 344, 455
+                      A  70,  70 0 0 0 372, 460
+                      A  70,  70 0 0 1 354, 370
+                      A 195, 195 0 0 0 495, 442
+                      A  67,  67 0 0 1 611, 380
+                      A 117, 117 0 0 0 654, 363
+                      A  65,  65 0 0 1 623, 401
+                      A 117, 117 0 0 0 662, 390
+                      A  65,  65 0 0 1 630, 425
+                      Z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="bottom">
+              <div class="right">
+                <div class="copyright">
+                  طراحی و توسعه توسط حمید شاهسونی - فروردین ۱۴۰۱
+                </div>
+              </div>
+              <div class="left">
+                <div class="company-logo">
+                  <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.7652 5.22559H9.39941L5.23996 22.7508C5.23996 22.7508 4.3918 25.9264 6.07649 26.9454C1.56848 24.7889 -0.685526 21.6606 0.185868 17.0038C1.05726 12.347 2.7652 5.22559 2.7652 5.22559Z"></path>
+                    <path d="M22.819 5.22559H29.0466L26.3394 17.6792C26.3394 17.6792 25.2938 23.6039 16.0105 26.9454C16.7131 26.529 17.3223 25.9669 17.7986 25.2954C18.2749 24.6239 18.6078 23.8579 18.7757 23.047C19.6239 20.0254 22.819 5.22559 22.819 5.22559Z"></path>
+                    <path d="M17.4278 0C17.4278 0 7.61005 6.3868 7.81919 16.4469C7.69859 20.5668 8.87983 24.6171 11.1886 28C11.1886 28 2.32359 12.7736 19.5423 5.56919C18.9033 3.43631 17.4278 0 17.4278 0Z"></path>
+                    <path d="M16.0104 8.2944L19.7516 6.30371C19.7516 6.30371 24.1318 18.0464 11.7348 27.8932C11.6883 27.8932 22.5052 19.2076 16.0104 8.2944Z"></path>
+                  </svg>
+                  <span>سازمان نظام صنفی رایانه ای</span>
+                </div>
+                <div class="company-logo">
+                  <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.7652 5.22559H9.39941L5.23996 22.7508C5.23996 22.7508 4.3918 25.9264 6.07649 26.9454C1.56848 24.7889 -0.685526 21.6606 0.185868 17.0038C1.05726 12.347 2.7652 5.22559 2.7652 5.22559Z"></path>
+                    <path d="M22.819 5.22559H29.0466L26.3394 17.6792C26.3394 17.6792 25.2938 23.6039 16.0105 26.9454C16.7131 26.529 17.3223 25.9669 17.7986 25.2954C18.2749 24.6239 18.6078 23.8579 18.7757 23.047C19.6239 20.0254 22.819 5.22559 22.819 5.22559Z"></path>
+                    <path d="M17.4278 0C17.4278 0 7.61005 6.3868 7.81919 16.4469C7.69859 20.5668 8.87983 24.6171 11.1886 28C11.1886 28 2.32359 12.7736 19.5423 5.56919C18.9033 3.43631 17.4278 0 17.4278 0Z"></path>
+                    <path d="M16.0104 8.2944L19.7516 6.30371C19.7516 6.30371 24.1318 18.0464 11.7348 27.8932C11.6883 27.8932 22.5052 19.2076 16.0104 8.2944Z"></path>
+                  </svg>
+                  <span>سازمان نظام صنفی رایانه ای</span>
+                </div>
+                <div class="company-logo">
+                  <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.7652 5.22559H9.39941L5.23996 22.7508C5.23996 22.7508 4.3918 25.9264 6.07649 26.9454C1.56848 24.7889 -0.685526 21.6606 0.185868 17.0038C1.05726 12.347 2.7652 5.22559 2.7652 5.22559Z"></path>
+                    <path d="M22.819 5.22559H29.0466L26.3394 17.6792C26.3394 17.6792 25.2938 23.6039 16.0105 26.9454C16.7131 26.529 17.3223 25.9669 17.7986 25.2954C18.2749 24.6239 18.6078 23.8579 18.7757 23.047C19.6239 20.0254 22.819 5.22559 22.819 5.22559Z"></path>
+                    <path d="M17.4278 0C17.4278 0 7.61005 6.3868 7.81919 16.4469C7.69859 20.5668 8.87983 24.6171 11.1886 28C11.1886 28 2.32359 12.7736 19.5423 5.56919C18.9033 3.43631 17.4278 0 17.4278 0Z"></path>
+                    <path d="M16.0104 8.2944L19.7516 6.30371C19.7516 6.30371 24.1318 18.0464 11.7348 27.8932C11.6883 27.8932 22.5052 19.2076 16.0104 8.2944Z"></path>
+                  </svg>
+                  <span>سازمان نظام صنفی رایانه ای</span>
+                </div>
+                <div class="company-logo">
+                  <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.7652 5.22559H9.39941L5.23996 22.7508C5.23996 22.7508 4.3918 25.9264 6.07649 26.9454C1.56848 24.7889 -0.685526 21.6606 0.185868 17.0038C1.05726 12.347 2.7652 5.22559 2.7652 5.22559Z"></path>
+                    <path d="M22.819 5.22559H29.0466L26.3394 17.6792C26.3394 17.6792 25.2938 23.6039 16.0105 26.9454C16.7131 26.529 17.3223 25.9669 17.7986 25.2954C18.2749 24.6239 18.6078 23.8579 18.7757 23.047C19.6239 20.0254 22.819 5.22559 22.819 5.22559Z"></path>
+                    <path d="M17.4278 0C17.4278 0 7.61005 6.3868 7.81919 16.4469C7.69859 20.5668 8.87983 24.6171 11.1886 28C11.1886 28 2.32359 12.7736 19.5423 5.56919C18.9033 3.43631 17.4278 0 17.4278 0Z"></path>
+                    <path d="M16.0104 8.2944L19.7516 6.30371C19.7516 6.30371 24.1318 18.0464 11.7348 27.8932C11.6883 27.8932 22.5052 19.2076 16.0104 8.2944Z"></path>
+                  </svg>
+                  <span>سازمان نظام صنفی رایانه ای</span>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

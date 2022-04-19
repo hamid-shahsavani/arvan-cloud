@@ -1,0 +1,34 @@
+{
+  "name": "arvan-cloud",
+  "version": "1.0.0",
+  "description": "arvancloud.com/fa front-end !",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sys113/arvan-cloud.git"
+  },
+  "keywords": [
+    "html",
+    "pure",
+    "css",
+    "flex-box",
+    "css-grid",
+    "javascript",
+    "jquary"
+  ],
+  "author": "hamid shahsavani",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sys113/arvan-cloud/issues"
+  },
+  "homepage": "https://github.com/sys113/arvan-cloud#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-uglify": "^3.0.2"
+  }
+}

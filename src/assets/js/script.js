@@ -30,7 +30,7 @@ function showAndHideTab(tabType) {
 
 $(document).ready(function () {
   //? hide loading animation in mobile and tablet
-  if (matchMedia('(min-width: 1001px)').matches) {
+  if (matchMedia('(min-width: 10001px)').matches) {
     document.onreadystatechange = function () {
       //? show loading before load content in desktop
       let state = document.readyState;
