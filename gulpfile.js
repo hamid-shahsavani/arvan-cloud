@@ -35,4 +35,4 @@ gulp.task('watch', () => {
 });
 
 //? loop for tasks
-gulp.task('default', gulp.parallel('copy-img-dir', 'copy-html', 'minify-js', 'minify-css', 'watch'));
+gulp.task('default', gulp.parallel('minify-js', 'minify-css', 'copy-img-dir', 'copy-html', 'watch'));

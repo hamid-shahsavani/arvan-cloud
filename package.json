@@ -4,7 +4,7 @@
   "description": "arvancloud.com/fa front-end !",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "echo 'hello build'"
   },
   "repository": {
     "type": "git",
