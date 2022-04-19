@@ -17,7 +17,6 @@
 * html 
 * css (css pure + flex box + css grid)
 * java script (javascript + jquary)
-* 
 ---
 ## contact me
 * *[email](mailto:051.SYS113@gmail.com)*
