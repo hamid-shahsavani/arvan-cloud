@@ -24,136 +24,11 @@ img {
 body {
   background-color: #f6f7fb;
   overflow-x: hidden;
-  overflow-y: hidden;
 }
 /*! ---------------------------------------------------------- variable ------------------------------------------------------------------------------------------------------ */
 
 :root {
   --base-color: #00baba;
-}
-
-/*! ----------------------------------------------------------- loading ------------------------------------------------------------------------------------------------------- */
-
-.loading-animation {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  z-index: 9999999999999999999999999999 !important;
-}
-
-.loading-animation .background {
-  display: block;
-  position: relative;
-  top: 50%;
-  width: 150px;
-  height: 150px;
-  margin: -75px 0 0 -75px;
-  border-radius: 50%;
-  border: 3px solid transparent;
-  border-top-color: #16a085;
-  -webkit-animation: spin 1.7s linear infinite;
-  animation: spin 1.7s linear infinite;
-  z-index: 999999999999999999999999999 !important;
-}
-.loading-animation .background:before {
-  content: '';
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  right: 5px;
-  bottom: 5px;
-  border-radius: 50%;
-  border: 3px solid transparent;
-  border-top-color: #e74c3c;
-  -webkit-animation: spin-reverse 0.6s linear infinite;
-  animation: spin-reverse 0.6s linear infinite;
-}
-.loading-animation .background:after {
-  content: '';
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 15px;
-  border-radius: 50%;
-  border: 3px solid transparent;
-  border-top-color: #f9c922;
-  -webkit-animation: spin 1s linear infinite;
-  animation: spin 1s linear infinite;
-}
-
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
-}
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes spin-reverse {
-  0% {
-    -webkit-transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(-360deg);
-  }
-}
-@keyframes spin-reverse {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(-360deg);
-  }
-}
-.loading-animation .loader-section {
-  position: fixed;
-  top: 0;
-  width: 51%;
-  height: 100%;
-  background: #222;
-  z-index: 10;
-}
-
-.loading-animation .loader-section.section-left {
-  left: 0;
-}
-
-.loading-animation .loader-section.section-right {
-  right: 0;
-}
-
-.loaded .loading-animation .loader-section.section-left {
-  transform: translateX(-100%);
-  transition: all 1s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.loaded .loading-animation .loader-section.section-right {
-  transform: translateX(100%);
-  transition: all 1s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.loaded .background {
-  opacity: 0 !important;
-  transition: all 0.3s ease-out;
-}
-
-.loaded .loading-animation {
-  visibility: hidden;
-  transform: translateY(-100%);
-  transition: all 0.3s 1s ease-out;
 }
 
 /*! ----------------------------------------------------------- alert -------------------------------------------------------------------------------------------------------- */
@@ -399,7 +274,7 @@ main .product .product-wrapper > .title {
 
 main .product .product-wrapper > .title:after {
   background-color: #20c5ba;
-  content: '';
+  content: "";
   display: block;
   height: 2px;
   margin: 10px auto;
@@ -443,7 +318,7 @@ main .product .product-tab .text {
 
 main .product .product-tab .text:after {
   display: block;
-  content: '';
+  content: "";
   border-bottom: solid 2px #00baba;
   transform: scaleX(0);
   transition: transform 0.2s ease-in-out;
@@ -688,7 +563,7 @@ main .product .product-content .image {
 /** ------------------------------------------------------ global -------------------------------------------------------- */
 
 main .customer {
-  background: url('../img/customer-background.svg') repeat-x;
+  background: url("../img/customer-background.svg") repeat-x;
   position: relative;
   padding: 100px 0;
 }
@@ -703,7 +578,7 @@ main .customer .title {
 }
 
 main .customer .title::after {
-  content: '';
+  content: "";
   background-color: var(--base-color);
   width: 30px;
   height: 2px;
@@ -861,7 +736,7 @@ main .customer .customer-logo {
   margin-bottom: 16px;
 }
 .map .map-header .left .title:after {
-  content: '';
+  content: "";
   background-color: var(--base-color);
   width: 30px;
   height: 2px;
@@ -995,7 +870,7 @@ main .solution .title {
 }
 
 main .solution .title:before {
-  content: '';
+  content: "";
   background-color: var(--base-color);
   width: 40px;
   height: 2px;
@@ -1055,7 +930,7 @@ main .solution-tab .text {
 
 main .solution-tab .text:after {
   display: block;
-  content: '';
+  content: "";
   margin-top: 5px;
   border-bottom: solid 2px #00baba;
   transform: scaleX(0);
@@ -1160,7 +1035,7 @@ main .solution-content-item:hover {
   }
 
   main .solution-tab.active .text::after {
-    content: '';
+    content: "";
     width: 0;
   }
   /* product item */
@@ -1344,7 +1219,7 @@ main .access .title {
 }
 
 main .access .title:before {
-  content: '';
+  content: "";
   background-color: var(--base-color);
   width: 40px;
   height: 2px;
@@ -1950,7 +1825,7 @@ footer > div {
 /* border-bottm */
 
 .main-menu li:after {
-  content: '';
+  content: "";
   display: block;
   top: 96%;
   border-bottom: 2px solid var(--base-color);
@@ -2261,7 +2136,13 @@ footer > div {
   font-weight: 600;
 }
 
-.sub-menu .item-4 .left .right-content .content .list:nth-child(3) .description {
+.sub-menu
+  .item-4
+  .left
+  .right-content
+  .content
+  .list:nth-child(3)
+  .description {
   margin-top: 5px;
   color: #a0b5d3;
   font-size: 12px;
@@ -2332,7 +2213,15 @@ footer > div {
   font-weight: 400;
 }
 
-.sub-menu .item-4 .left .left-content .content .blog-post .content .button .icon {
+.sub-menu
+  .item-4
+  .left
+  .left-content
+  .content
+  .blog-post
+  .content
+  .button
+  .icon {
   font-size: 10px;
   vertical-align: -1px;
 }
@@ -2445,7 +2334,7 @@ footer > div {
     height: 60px;
     display: flex;
     align-items: center;
-    padding:0 10px 0 10px
+    padding: 0 10px 0 10px;
   }
 
   .mobile-header .m-top-menu > div {
@@ -2519,11 +2408,11 @@ footer > div {
     transition-duration: 0.25s;
   }
   .mobile-menu-icon-2 > span::before {
-    content: '';
+    content: "";
     top: -8px;
   }
   .mobile-menu-icon-2 > span::after {
-    content: '';
+    content: "";
     top: 8px;
   }
 
@@ -2700,7 +2589,7 @@ footer > div {
   /** ------------------------------------------------------------------ item type-2 ------------------------------------------------------------- */
 
   .m-main-menu .m-sub-menu .item-type-2 ul li ::before {
-    content: '• ';
+    content: "• ";
     color: #697d9a;
     font-size: 18px;
     margin: -2px 0 0 5px;

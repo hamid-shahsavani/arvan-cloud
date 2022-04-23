@@ -4,12 +4,12 @@
 
 function hideAndShow(show, active) {
   $(show).hide();
-  $(active).on('click', function () {
+  $(active).on("click", function () {
     $(show).slideToggle();
-    if ($(active).hasClass('active')) {
-      $(active).removeClass('active');
+    if ($(active).hasClass("active")) {
+      $(active).removeClass("active");
     } else {
-      $(active).addClass('active');
+      $(active).addClass("active");
     }
   });
 }
@@ -18,11 +18,11 @@ function hideAndShow(show, active) {
 
 function showAndHideTab(tabType) {
   $(`.${tabType}-tab`).click(function () {
-    let tabId = '#' + this.id.replace('tab', 'content');
-    $(`.${tabType}-content`).removeClass('active');
-    $(tabId).addClass('active');
-    $(`.${tabType}-tab`).removeClass('active');
-    $(this).addClass('active');
+    let tabId = "#" + this.id.replace("tab", "content");
+    $(`.${tabType}-content`).removeClass("active");
+    $(tabId).addClass("active");
+    $(`.${tabType}-tab`).removeClass("active");
+    $(this).addClass("active");
   });
 }
 
@@ -30,21 +30,13 @@ function showAndHideTab(tabType) {
 
 $(document).ready(function () {
   //? hide loading animation in mobile and tablet
-  if (matchMedia('(min-width: 1001px)').matches) {
-    document.onreadystatechange = function () {
-      //? show loading before load content in desktop
-      let state = document.readyState;
-      if (state == 'complete') {
-        $('body').addClass('loaded');
-        $('body').css({ 'overflow-y': 'visible' });
-      }
-    };
+  if (matchMedia("(min-width: 1001px)").matches) {
     //? show alert in desktop
     swal({
-      title: 'یک لحضه وایسا ...',
-      text: 'اینجا صرفا یک صفحه غیر رسمی از وب سایت آروان کلود هست!',
-      icon: 'warning',
-      button: 'بزن بریم!',
+      title: "یک لحضه وایسا ...",
+      text: "اینجا صرفا یک صفحه غیر رسمی از وب سایت آروان کلود هست!",
+      icon: "warning",
+      button: "بزن بریم!",
     });
   }
 
@@ -52,63 +44,63 @@ $(document).ready(function () {
 
   //? show product tab content
 
-  showAndHideTab('product');
+  showAndHideTab("product");
 
   //? show solution tab content
 
-  showAndHideTab('solution');
+  showAndHideTab("solution");
 
   //* ===> for desktop
 
   $(window).scroll(function () {
     // for main-menu
-    let mainMenu = $('.main-menu'),
+    let mainMenu = $(".main-menu"),
       scrollMainMenu = $(window).scrollTop();
     if (scrollMainMenu >= 200) {
-      mainMenu.addClass('main-menu-fixed');
+      mainMenu.addClass("main-menu-fixed");
     } else {
-      mainMenu.removeClass('main-menu-fixed');
+      mainMenu.removeClass("main-menu-fixed");
     }
     // for sub-menu
-    let subMenu = $('.sub-menu'),
+    let subMenu = $(".sub-menu"),
       scrollSubMenu = $(window).scrollTop();
     if (scrollSubMenu >= 200) {
-      subMenu.addClass('sub-menu-fixed');
+      subMenu.addClass("sub-menu-fixed");
     } else {
-      subMenu.removeClass('sub-menu-fixed');
+      subMenu.removeClass("sub-menu-fixed");
     }
   });
 
   //? show language menu header and footer in desktop
 
   function showLangList(x) {
-    $(`.active-lang-${x}`).on('click', function () {
-      $('.other').toggleClass('show');
+    $(`.active-lang-${x}`).on("click", function () {
+      $(".other").toggleClass("show");
     });
   }
 
-  showLangList('header');
-  showLangList('footer');
+  showLangList("header");
+  showLangList("footer");
 
   //? show and hide sub-menu in desktop
 
-  $('.main-menu-content').hide();
+  $(".main-menu-content").hide();
 
-  $('.main-menu-tab').on('click', function () {
-    let clickedId = $(this).attr('id');
-    let clickedIdContent = clickedId.replace('-tab', '');
-    if ($('#' + clickedId).hasClass('active')) {
-      $('#' + clickedId).removeClass('active');
-      $('#' + clickedIdContent).slideUp('slow');
+  $(".main-menu-tab").on("click", function () {
+    let clickedId = $(this).attr("id");
+    let clickedIdContent = clickedId.replace("-tab", "");
+    if ($("#" + clickedId).hasClass("active")) {
+      $("#" + clickedId).removeClass("active");
+      $("#" + clickedIdContent).slideUp("slow");
       return 0;
     }
-    $('.main-menu-tab').each(function (index) {
-      if ($(this).attr('id') == clickedId) {
-        $('.main-menu-tab,.main-menu-content').eq(index).addClass('active');
-        $('.main-menu-content').eq(index).slideDown();
+    $(".main-menu-tab").each(function (index) {
+      if ($(this).attr("id") == clickedId) {
+        $(".main-menu-tab,.main-menu-content").eq(index).addClass("active");
+        $(".main-menu-content").eq(index).slideDown();
       } else {
-        $('.main-menu-tab,.main-menu-content').eq(index).removeClass('active');
-        $('.main-menu-content').eq(index).hide();
+        $(".main-menu-tab,.main-menu-content").eq(index).removeClass("active");
+        $(".main-menu-content").eq(index).hide();
       }
     });
   });
@@ -117,15 +109,15 @@ $(document).ready(function () {
 
   //? show language menu in mobile
 
-  hideAndShow('.m-change-lang-sub', '.m-change-lang');
+  hideAndShow(".m-change-lang-sub", ".m-change-lang");
 
   //? add active class to mobile menu icon and show main-menu
 
-  hideAndShow('.mobile-header .m-show-menu', '.mobile-menu-button input');
+  hideAndShow(".mobile-header .m-show-menu", ".mobile-menu-button input");
 
   //? add active class to mobile menu item and show sub-menu
 
   for (let i = 1; i <= 4; i++) {
-    hideAndShow('.m-sub-menu-' + i, '.m-item-' + i);
+    hideAndShow(".m-sub-menu-" + i, ".m-item-" + i);
   }
 });
