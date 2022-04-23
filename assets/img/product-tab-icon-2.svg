@@ -1,0 +1,5 @@
+<svg width="35" height="35" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path id="productsCloudStorageCloud" d="M31.6315 28C33.5637 27.612 35.2813 26.5279 36.4507 24.9582C37.6201 23.3884 38.1579 21.445 37.9597 19.5051C37.7616 17.5653 36.8416 15.7675 35.3783 14.4607C33.9151 13.1539 32.013 12.4313 30.0414 12.4333H28.0378C27.511 10.4164 26.4859 8.56048 25.0546 7.0321C23.6232 5.50373 21.8305 4.35077 19.8372 3.67674C17.844 3.0027 15.7127 2.8287 13.6346 3.17034C11.5566 3.51198 9.5969 4.35858 7.93146 5.63412C6.26602 6.90967 4.94698 8.57423 4.09278 10.4784C3.23857 12.3825 2.87594 14.4666 3.03744 16.5435C3.19894 18.6205 3.87951 20.6252 5.01805 22.3779C6.1566 24.1305 7.71747 25.5761 9.56053 26.5848" stroke="#7A90AA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path id="productsCloudStorageArrowLine" d="M20 38L20 24" stroke="#9AAABC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path id="productsCloudStorageArrowTip" d="M13 31L20 24L27 31" stroke="#9AAABC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
