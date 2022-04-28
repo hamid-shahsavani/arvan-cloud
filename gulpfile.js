@@ -31,7 +31,7 @@ gulp.task('watch', () => {
   gulp.watch('src/assets/img/*', gulp.series('copy-img-dir'));
   gulp.watch('src/assets/js/*.js', gulp.series('minify-js'));
   gulp.watch('src/assets/css/*.css', gulp.series('minify-css'));
-  gulp.watch('src/assets/*.html', gulp.series('copy-html'));
+  gulp.watch('src/*.html', gulp.series('copy-html'));
 });
 
 //? loop for tasks
