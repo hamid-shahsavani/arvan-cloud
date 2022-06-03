@@ -1130,7 +1130,7 @@ main .solution-content-item:hover {
   transition: box-shadow 0.5s;
   margin: 10px;
 }
-
+main .access .sub-title
 .banner-wrapper .text .buttons a:hover {
   box-shadow: 0 0 0 3px #344456;
 }
@@ -1138,6 +1138,12 @@ main .solution-content-item:hover {
 .banner-wrapper .text .buttons .start {
   background-color: #00baba;
   color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+  .banner-wrapper .text .title {
+    font-size: 26px;
+  }
 }
 
 /**------------------------------------------------------------------ responsive ------------------------------------------------------------- */
@@ -1233,9 +1239,27 @@ main .access .title:before {
 main .access .sub-title {
   color: #344456;
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: 16px;
   margin-top: 20px;
+}
+
+@media screen and (max-width: 447px) {
+  main .solution .sub-title {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 448px) and (max-width: 529px) {
+  main .solution .sub-title {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 530px) and (max-width: 650px) {
+  main .solution .sub-title {
+    font-size: 30px !important;
+  }
 }
 
 /** ----------------------------------------------------------------- access-items -------------------------------------------------------------- */
